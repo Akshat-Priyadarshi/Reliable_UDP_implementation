@@ -1,0 +1,51 @@
+The Evolution of Connection: From Postal Paths to Fiber Pulses
+
+This is the 1st paragraph. For decades, the exchange of data was a physical burden, relying on hand-delivered letters and slow-moving print. Over the last 50 years, we have transitioned from a world where news took weeks to travel across oceans to a digital era where the sum of human knowledge is accessible in mere milliseconds.
+
+This is the 2nd fact about computer networks. Before the internet, we relied on circuit switching, the same tech used by old telephone operators. In this system, a dedicated physical path had to be established and maintained for the entire duration of a conversation, which was incredibly inefficient for bursty data.
+
+This is the 3rd fact about computer networks. The game changed with the discovery of packet switching in the 1960s by Paul Baran and Donald Davies. By breaking data into small, independent chunks, multiple users could finally share the same wire simultaneously without waiting for a dedicated circuit.
+
+This is the 4th story about the internet. The very first message ever sent over the ARPANET occurred in 1969 between UCLA and SRI. The researcher tried to type "LOGIN," but the system crashed after the first two letters, making "LO" the first unintentional "Hello World" of the digital age.
+
+This is the 5th story about the internet. In the mid-1970s, Vint Cerf and Bob Kahn developed TCP/IP, the foundational “language” of the internet. Their open architecture design philosophy is similar to the modular approach we follow in our reliable UDP project implementation.
+
+This is the 6th fact about computer networks. Ethernet was born in 1973 at Xerox PARC, inspired by ALOHAnet. Bob Metcalfe’s idea of a shared medium carrying packets is conceptually related to how we manage buffered packet transmission in our reliable UDP sliding window design.
+
+This is the 7th fact about computer networks. In the early days, network hosts were manually tracked using HOSTS.TXT files. As networks scaled, automation became necessary, just like how we automate packet handling, retransmission, and flow control logic in our protocol engine.
+
+This is the 8th story about the internet. Modern connectivity depends on massive fiber optic cables spanning oceans. These physical infrastructures remind us that even though we simulate reliability in software, the real world still imposes constraints like delay, loss, and bandwidth.
+
+This is the 9th fact about computer networks. The Border Gateway Protocol governs large-scale routing decisions. In our reliable UDP system, although routing is not implemented, we still manage packet ordering and delivery correctness at the transport layer.
+
+This is the 10th story about the internet. Tim Berners-Lee’s invention of the World Wide Web transformed network usage patterns. Today, our work focuses on improving lower-level transport reliability over UDP rather than application-level innovations.
+
+This is the 11th story about the internet. The first webcam monitored a coffee pot to avoid unnecessary trips. Similarly, our debugging logs help us avoid blind retransmissions by clearly indicating packet states and window movements.
+
+This is the 12th fact about computer networks. The Morris Worm incident highlighted the importance of robust protocol design. Our reliable UDP implementation also emphasizes correctness under failure conditions such as packet drops and timeout events.
+
+This is the 13th fact about computer networks. Congestion collapse once reduced network throughput to nearly zero. Sliding window mechanisms, like the one we are implementing, play a crucial role in preventing such inefficiencies.
+
+This is the 14th story about the internet. The development of SSL introduced secure handshakes. While our project does not implement encryption, we still perform structured connection termination handshakes using FIN and ACK control messages.
+
+This is the 15th fact about computer networks. Wireless communication revolutionized accessibility. In contrast, our project focuses on reliability improvements at the transport abstraction level rather than physical medium innovations.
+
+This is the 16th story about the internet. The dot-com boom funded large infrastructure deployments. Today, experimental protocol implementations like ours continue pushing the boundaries of network software behavior.
+
+This is the 17th fact about computer networks. IPv6 introduced an enormous address space. Even though addressing complexity is abstracted in our project, we still maintain logical connection identifiers through our socket table structures.
+
+This is the 18th story about the internet. Undersea cable failures once slowed connectivity across continents. Our packet drop simulation similarly introduces controlled failures to validate retransmission correctness.
+
+This is the 19th fact about computer networks. Cloud computing shifted infrastructure ownership models. Likewise, our protocol engine centralizes reliability handling instead of pushing complexity into individual applications.
+
+This is the 20th story about the internet. The Internet of Things introduced billions of communicating devices. Reliable transport mechanisms, like the one we are building, become even more important in such large-scale environments.
+
+This is the 21st fact about computer networks. Software Defined Networking enables programmable control of network behavior. In our project, we program transport reliability directly through custom thread-driven protocol logic.
+
+This is the 22nd fact about computer networks. Modern protocols like QUIC operate over UDP to reduce latency. Our reliable UDP implementation similarly demonstrates how advanced transport features can be layered on top of UDP.
+
+This is the 23rd story about the internet. AI-driven traffic management is now emerging. While our system is deterministic, its structured event-driven threads already resemble simplified autonomous network management.
+
+This is the 24th fact about computer networks. Quantum networking research promises fundamentally secure communication. Our current focus remains classical reliability guarantees such as in-order delivery and duplicate suppression.
+
+This is the 25th paragraph. This concludes our journey through networking history and our experimentation with reliable UDP transport. If we can observe all paragraphs correctly at the receiver without missing sequence numbers or unintended duplicates, our sliding window protocol implementation is functioning successfully and ready for graceful termination.
