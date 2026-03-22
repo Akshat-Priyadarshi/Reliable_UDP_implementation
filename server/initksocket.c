@@ -5,7 +5,7 @@
 // Member 2 Name: Aman Tudu
 // Member 2 Roll number: 23CS30004
 
-#include <ksocket.h>
+#include<ksocket.h>
 #define SELECT_TIMEOUT 100000
 #define CLOSE_SOCKET(i) do { \
     FD_CLR(SM[i].sockfd, &master); \
@@ -67,7 +67,7 @@ ssize_t send_fin_ack(usockfd_t sockfd, struct sockaddr_in dest_addr){
 }
 
 static inline void close_socket(k_sockinfo *SM, int i, fd_set *master){
-    if (SM[i].sockfd != -1) {
+    if(SM[i].sockfd!=-1){
         FD_CLR(SM[i].sockfd, master);
         close(SM[i].sockfd);
         SM[i].sockfd = -1;
@@ -82,17 +82,17 @@ void cleanup(int signo){
     int shmid = k_shmget();
     int semid = k_semget();
 
-    if (shmid != -1){
+    if(shmid!=-1){
         shmctl(shmid, IPC_RMID, 0);
         printf("SHM %d removed\n", shmid);
     }
 
-    if (semid != -1){
+    if(semid!=-1){
         semctl(semid, 0, IPC_RMID);
         printf("SEM %d removed\n", semid);
     }
 
-    if (signo == SIGSEGV){
+    if(signo==SIGSEGV){
         printf("Segmentation fault\n");
     }
     exit(0);
@@ -101,19 +101,19 @@ void cleanup(int signo){
 void initk_shm(){
     key_t key = ftok(SHM_PATH, SHM_ID);
     int shmid = shmget(key, N * sizeof(k_sockinfo), IPC_CREAT | 0777 | IPC_EXCL);
-    if (shmid == -1){
+    if(shmid==-1){
         perror("initsocket: shmget");
         exit(1);
     }
 
     k_sockinfo *SM = (k_sockinfo *)shmat(shmid, NULL, 0);
-    if (SM == (void *)-1){
+    if(SM==(void *)-1){
         perror("initsocket: shmat");
         exit(1);
     }
 
-    for (int i = 0; i < N; i++){
-        SM[i].is_free = true;
+    for(int i=0;i<N;i++){
+        SM[i].is_free=true;
     }
 
     printf("Shared memory initialized with ID: %d\n", shmid);
@@ -123,7 +123,7 @@ void initk_shm(){
 void initk_sem(){
     key_t key = ftok(SEM_PATH, SEM_ID);
     int semid = semget(key, N, IPC_CREAT | 0777 | IPC_EXCL);
-    if (semid == -1){
+    if(semid==-1){
         perror("initsocket: semget");
         exit(1);
     }
@@ -133,8 +133,8 @@ void initk_sem(){
     union semun arg;
     unsigned short vals[N];
 
-    for (int i = 0; i < N; i++)
-        vals[i] = 1;
+    for(int i=0;i<N;i++)
+        vals[i]=1;
 
     arg.array = vals;
     if (semctl(semid, 0, SETALL, arg) == -1){
@@ -154,8 +154,8 @@ void *threadR(void *arg){
 
     char buff[PACKETSIZE];
 
-    for (;;){
-        rfds = master;
+    for(;;){
+        rfds=master;
         tv.tv_sec = 0;
         tv.tv_usec = SELECT_TIMEOUT;
 
@@ -166,7 +166,7 @@ void *threadR(void *arg){
         socklen_t addr_len = sizeof(sender_addr);
         for (int i = 0; i < N; i++){
             wait_sem(semid, i);
-            if (!SM[i].is_free && SM[i].is_bound && FD_ISSET(SM[i].sockfd, &rfds)){
+            if(!SM[i].is_free&&SM[i].is_bound&&FD_ISSET(SM[i].sockfd, &rfds)){
                 recvsocket = SM[i].sockfd;
                 numbytes = recvfrom(SM[i].sockfd, buff, PACKETSIZE, 0, (struct sockaddr *)&sender_addr, &addr_len);
             }
@@ -175,14 +175,14 @@ void *threadR(void *arg){
                 break;
         }
 
-        if (recvsocket != -1){
-            if (numbytes < 0){
+        if(recvsocket!=-1){
+            if(numbytes<0){
                 perror("recvfrom");
             }
-            else if (numbytes == 0){
-                for (int i = 0; i < N; i++){
+            else if(numbytes==0){
+                for(int i=0;i<N;i++){
                     wait_sem(semid, i);
-                    if (!SM[i].is_free && SM[i].is_bound && SM[i].sockfd == recvsocket){
+                    if(!SM[i].is_free&&SM[i].is_bound&&SM[i].sockfd==recvsocket){
                         printf("R: Connection closed by other end\n");
                         SM[i].is_closed = true;
                     }
@@ -190,48 +190,48 @@ void *threadR(void *arg){
                 }
             }
             else{
-                for (int i = 0; i < N; i++){
+                for(int i=0;i<N;i++){
                     wait_sem(semid, i);
-                    if (!SM[i].is_free && SM[i].is_bound && SM[i].sockfd == recvsocket && SM[i].dest_addr.sin_addr.s_addr == sender_addr.sin_addr.s_addr && SM[i].dest_addr.sin_port == sender_addr.sin_port){
+                    if(!SM[i].is_free&&SM[i].is_bound&&SM[i].sockfd==recvsocket&&SM[i].dest_addr.sin_addr.s_addr==sender_addr.sin_addr.s_addr&&SM[i].dest_addr.sin_port==sender_addr.sin_port){
                         char type[MSGTYPE + 1], msg[MSGSIZE];
                         u_int16_t seq, rwnd;
                         strip_msg(buff, type, &seq, &rwnd, msg);
-                        if (dropMessage(P)){
+                        if(dropMessage(P)){
                             printf("Dropped: %s %d coming through ksocket %d\n", type, seq, i);
                             signal_sem(semid, i);
                             continue;
                         }
-                        if (!strcmp(type, "DATA")){
+                        if(!strcmp(type, "DATA")){
                             printf("R: DATA %d through ksocket %d\n", seq, i);
-                            SM[i].nospace = false;
-                            bool duplicate = true;
-                            for (int j = SM[i].rwnd.base, ctr = 0; ctr < SM[i].rwnd.size; j = (j + 1) % WINDOWSIZE, ctr++){
-                                if (SM[i].rwnd.msg_seq[j] == seq){
-                                    if (!SM[i].rwnd.received[j]){
-                                        duplicate = false;
-                                        SM[i].rwnd.received[j] = true;
+                            SM[i].nospace=false;
+                            bool duplicate=true;
+                            for(int j=SM[i].rwnd.base, ctr=0;ctr<SM[i].rwnd.size;j=(j+1)%WINDOWSIZE, ctr++){
+                                if(SM[i].rwnd.msg_seq[j]==seq){
+                                    if(!SM[i].rwnd.received[j]){
+                                        duplicate=false;
+                                        SM[i].rwnd.received[j]=true;
                                         memcpy(SM[i].recv_buff[j], msg, MSGSIZE);
 
-                                        int new_last_ack = -1;
-                                        for (int k = SM[i].rwnd.base, ct = 0; ct < SM[i].rwnd.size; k = (k + 1) % WINDOWSIZE, ct++){
-                                            if (!SM[i].rwnd.received[k])
+                                        int new_last_ack=-1;
+                                        for(int k=SM[i].rwnd.base, ct=0;ct<SM[i].rwnd.size;k=(k+1)%WINDOWSIZE, ct++){
+                                            if(!SM[i].rwnd.received[k])
                                                 break;
-                                            new_last_ack = k;
+                                            new_last_ack=k;
                                         }
-                                        if (new_last_ack != -1){
-                                            SM[i].rwnd.last_ack = SM[i].rwnd.msg_seq[new_last_ack];
-                                            for (int k = SM[i].rwnd.base, ct = 0;; k = (k + 1) % WINDOWSIZE, ct++){
-                                                SM[i].rwnd.msg_seq[k] = (SM[i].rwnd.last_seq) % MAXSEQ + 1;
-                                                SM[i].rwnd.last_seq = SM[i].rwnd.msg_seq[k];
-                                                if (k == new_last_ack)
+                                        if(new_last_ack!=-1){
+                                            SM[i].rwnd.last_ack=SM[i].rwnd.msg_seq[new_last_ack];
+                                            for(int k=SM[i].rwnd.base, ct=0;;k=(k+1)%WINDOWSIZE, ct++){
+                                                SM[i].rwnd.msg_seq[k]=(SM[i].rwnd.last_seq)%MAXSEQ+1;
+                                                SM[i].rwnd.last_seq=SM[i].rwnd.msg_seq[k];
+                                                if(k==new_last_ack)
                                                     break;
                                             }
 
-                                            SM[i].rwnd.size -= (new_last_ack - SM[i].rwnd.base + WINDOWSIZE) % WINDOWSIZE + 1;
-                                            SM[i].rwnd.base = (new_last_ack + 1) % WINDOWSIZE;
+                                            SM[i].rwnd.size-=((new_last_ack-SM[i].rwnd.base+WINDOWSIZE)%WINDOWSIZE+1);
+                                            SM[i].rwnd.base=(new_last_ack+1)%WINDOWSIZE;
                                             printf("R: Sent ACK %d %d through ksocket %d\n", SM[i].rwnd.last_ack, SM[i].rwnd.size, i);
-                                            int n = send_ack(SM[i].sockfd, SM[i].dest_addr, SM[i].rwnd.last_ack, SM[i].rwnd.size);
-                                            if (n < 0){
+                                            int n=send_ack(SM[i].sockfd, SM[i].dest_addr, SM[i].rwnd.last_ack, SM[i].rwnd.size);
+                                            if(n<0){
                                                 perror("send_ack");
                                             }
                                         }
@@ -240,40 +240,40 @@ void *threadR(void *arg){
                                     break;
                                 }
                             }
-                            if (duplicate){
+                            if(duplicate){
                                 printf("R: Duplicate message received: %u\t Sent ACK %d %d through ksocket %d\n", seq, SM[i].rwnd.last_ack, SM[i].rwnd.size, i);
-                                int n = send_ack(SM[i].sockfd, SM[i].dest_addr, SM[i].rwnd.last_ack, SM[i].rwnd.size);
-                                if (n < 0){
+                                int n=send_ack(SM[i].sockfd, SM[i].dest_addr, SM[i].rwnd.last_ack, SM[i].rwnd.size);
+                                if(n<0){
                                     perror("send_ack");
                                 }
                             }
 
-                            if (SM[i].rwnd.size == 0){
-                                SM[i].nospace = true;
+                            if(SM[i].rwnd.size==0){
+                                SM[i].nospace=true;
                             }
                         }
-                        else if (!strcmp(type, "ACK")){
+                        else if(!strcmp(type, "ACK")){
                             printf("R: ACK %d %d through ksocket %d\n", seq, rwnd, i);
-                            for (int j = SM[i].swnd.base, ctr = 0; ctr < SM[i].swnd.size; j = (j + 1) % WINDOWSIZE, ctr++){
-                                if (SM[i].swnd.msg_seq[j] == seq){
-                                    for (int k = SM[i].swnd.base;; k = (k + 1) % WINDOWSIZE){
-                                        SM[i].swnd.timeout[k] = -1;
-                                        SM[i].send_buff_empty[k] = true;
-                                        SM[i].swnd.msg_seq[k] = (SM[i].swnd.last_seq) % MAXSEQ + 1;
-                                        SM[i].swnd.last_seq = SM[i].swnd.msg_seq[k];
-                                        if (k == j)
+                            for(int j=SM[i].swnd.base, ctr=0;ctr<SM[i].swnd.size;j=(j+1)%WINDOWSIZE, ctr++){
+                                if(SM[i].swnd.msg_seq[j]==seq){
+                                    for(int k=SM[i].swnd.base;;k=(k+1)%WINDOWSIZE){
+                                        SM[i].swnd.timeout[k]=-1;
+                                        SM[i].send_buff_empty[k]=true;
+                                        SM[i].swnd.msg_seq[k]=(SM[i].swnd.last_seq)%MAXSEQ+1;
+                                        SM[i].swnd.last_seq=SM[i].swnd.msg_seq[k];
+                                        if(k==j)
                                             break;
                                     }
-                                    SM[i].swnd.base = (j + 1) % WINDOWSIZE;
+                                    SM[i].swnd.base=(j+1)%WINDOWSIZE;
                                     break;
                                 }
                             }
-                            SM[i].swnd.size = rwnd;
+                            SM[i].swnd.size=rwnd;
                         }
                         else if(!strcmp(type, "FIN")){
                             printf("R: FIN through ksocket %d\n", i);
-                            int n = send_fin_ack(SM[i].sockfd, SM[i].dest_addr);
-                            if(n < 0){
+                            int n=send_fin_ack(SM[i].sockfd, SM[i].dest_addr);
+                            if(n<0){
                                 perror("send_fin_ack");
                             }
                             CLOSE_SOCKET(i);
@@ -291,32 +291,32 @@ void *threadR(void *arg){
             }
         }
         else{
-            for (int i = 0; i < N; i++){
+            for(int i=0;i<N;i++){
                 wait_sem(semid, i);
-                if (!SM[i].is_free){
-                    if (!SM[i].is_bound){
-                        usockfd_t ksockfd = socket(AF_INET, SOCK_DGRAM, 0);
-                        if (ksockfd < 0){
+                if(!SM[i].is_free){
+                    if(!SM[i].is_bound){
+                        usockfd_t ksockfd=socket(AF_INET, SOCK_DGRAM, 0);
+                        if(ksockfd<0){
                             perror("socket");
                         }
                         else{
-                            if (bind(ksockfd, (struct sockaddr *)&SM[i].src_addr, sizeof(SM[i].src_addr)) < 0){
+                            if(bind(ksockfd, (struct sockaddr *)&SM[i].src_addr, sizeof(SM[i].src_addr))<0){
                                 perror("bind");
                                 close(ksockfd);
                             }
                             else{
-                                SM[i].sockfd = ksockfd;
+                                SM[i].sockfd=ksockfd;
                                 FD_SET(SM[i].sockfd, &master);
-                                if (SM[i].sockfd > maxfd)
-                                    maxfd = SM[i].sockfd;
-                                SM[i].is_bound = true;
+                                if(SM[i].sockfd>maxfd)
+                                    maxfd=SM[i].sockfd;
+                                SM[i].is_bound=true;
                                 printf("R: Bound KTP socket %d to UDP socket %d\n", i, SM[i].sockfd);
                             }
                         }
                     }
-                    else if (SM[i].nospace && SM[i].rwnd.size > 0){
-                        int n = send_ack(SM[i].sockfd, SM[i].dest_addr, SM[i].rwnd.last_ack, SM[i].rwnd.size);
-                        if (n < 0){
+                    else if(SM[i].nospace&&SM[i].rwnd.size>0){
+                        int n=send_ack(SM[i].sockfd, SM[i].dest_addr, SM[i].rwnd.last_ack, SM[i].rwnd.size);
+                        if(n<0){
                             perror("send_ack");
                         }
                     }
@@ -328,31 +328,31 @@ void *threadR(void *arg){
     return NULL;
 }
 void *threadS(void *arg){
-    int semid = k_semget();
-    k_sockinfo *SM = k_shmat();
+    int semid=k_semget();
+    k_sockinfo *SM=k_shmat();
 
-    while (1){
-        sleep(T / 2);
-        for (int i = 0; i < N; i++){
+    while(1){
+        sleep(T/2);
+        for(int i=0;i<N;i++){
             wait_sem(semid, i);
-            if (!SM[i].is_free && SM[i].is_bound){
+            if(!SM[i].is_free&&SM[i].is_bound){
                 if(SM[i].is_closed){
                     if(SM[i].fin_time==-1){
                         printf("S: FIN through ksocket %d\n", i);
-                        int n = send_fin(SM[i].sockfd, SM[i].dest_addr);
-                        if(n < 0){
+                        int n=send_fin(SM[i].sockfd, SM[i].dest_addr);
+                        if(n<0){
                             perror("send_fin");
                         }
-                        SM[i].fin_time = time(NULL);
+                        SM[i].fin_time=time(NULL);
                     }
-                    else if(time(NULL) - SM[i].fin_time >= T){
+                    else if(time(NULL)-SM[i].fin_time>=T){
                         if(SM[i].fin_retries<F){
                             printf("S: FIN through ksocket %d (retry %d)\n", i, ++SM[i].fin_retries);
-                            int n = send_fin(SM[i].sockfd, SM[i].dest_addr);
-                            if(n < 0){
+                            int n=send_fin(SM[i].sockfd, SM[i].dest_addr);
+                            if(n<0){
                                 perror("send");
                             }
-                            SM[i].fin_time = time(NULL);
+                            SM[i].fin_time=time(NULL);
                         }
                         else{
                             printf("S: FAK not received; closing ksocket %d\n", i);
@@ -361,18 +361,18 @@ void *threadS(void *arg){
                     }
                 }
                 else{
-                    bool timeout = (SM[i].swnd.timeout[SM[i].swnd.base] > 0 && (time(NULL) - SM[i].swnd.timeout[SM[i].swnd.base]) >= T);
+                    bool timeout=(SM[i].swnd.timeout[SM[i].swnd.base]>0&&(time(NULL)-SM[i].swnd.timeout[SM[i].swnd.base])>=T);
 
-                    if (timeout){
-                        for (int j = SM[i].swnd.base, ctr = 0; ctr < SM[i].swnd.size; j = (j + 1) % WINDOWSIZE, ctr++){
-                            if (SM[i].swnd.timeout[j] == -1)
+                    if(timeout){
+                        for(int j=SM[i].swnd.base, ctr=0;ctr<SM[i].swnd.size;j=(j+1)%WINDOWSIZE, ctr++){
+                            if(SM[i].swnd.timeout[j]==-1)
                                 break;
                             printf("S: Timeout; DATA %u through ksocket %d\n", SM[i].swnd.msg_seq[j], i);
-                            int n = send_data(SM[i].sockfd, SM[i].dest_addr, SM[i].swnd.msg_seq[j], SM[i].send_buff[j]);
-                            if (n < 0){
+                            int n=send_data(SM[i].sockfd, SM[i].dest_addr, SM[i].swnd.msg_seq[j], SM[i].send_buff[j]);
+                            if(n<0){
                                 perror("send_data");
                             }
-                            SM[i].swnd.timeout[j] = time(NULL) + T;
+                            SM[i].swnd.timeout[j]=time(NULL)+T;
                         }
                     }
                 }
@@ -381,18 +381,18 @@ void *threadS(void *arg){
             signal_sem(semid, i);
         }
 
-        for (int i = 0; i < N; i++){
+        for(int i=0;i<N;i++){
             wait_sem(semid, i);
-            if (!SM[i].is_free && SM[i].is_bound){
-                for (int j = SM[i].swnd.base, ctr = 0; ctr < SM[i].swnd.size; j = (j + 1) % WINDOWSIZE, ctr++){
-                    if (SM[i].swnd.timeout[j] == -1){
-                        if (!SM[i].send_buff_empty[j]){
+            if(!SM[i].is_free&&SM[i].is_bound){
+                for(int j=SM[i].swnd.base, ctr=0;ctr<SM[i].swnd.size;j=(j+1)%WINDOWSIZE, ctr++){
+                    if(SM[i].swnd.timeout[j]==-1){
+                        if(!SM[i].send_buff_empty[j]){
                             printf("S: DATA %u through ksocket %d\n", SM[i].swnd.msg_seq[j], i);
-                            int n = send_data(SM[i].sockfd, SM[i].dest_addr, SM[i].swnd.msg_seq[j], SM[i].send_buff[j]);
-                            if (n < 0){
+                            int n=send_data(SM[i].sockfd, SM[i].dest_addr, SM[i].swnd.msg_seq[j], SM[i].send_buff[j]);
+                            if(n<0){
                                 perror("send_data");
                             }
-                            SM[i].swnd.timeout[j] = time(NULL) + T;
+                            SM[i].swnd.timeout[j]=time(NULL)+T;
                         }
                     }
                 }
@@ -402,17 +402,17 @@ void *threadS(void *arg){
     }
 }
 void *threadG(void *arg){
-    int semid = k_semget();
-    k_sockinfo *SM = k_shmat();
+    int semid=k_semget();
+    k_sockinfo *SM=k_shmat();
 
-    while (1){
+    while(1){
         sleep(T);
-        for (int i = 0; i < N; i++){
+        for(int i=0;i<N;i++){
             wait_sem(semid, i);
-            if (!SM[i].is_free && !SM[i].is_closed){
-                if (kill(SM[i].pid, 0) == -1){
+            if(!SM[i].is_free&&!SM[i].is_closed){
+                if(kill(SM[i].pid, 0)==-1){
                     printf("G: Process %d terminated\n", SM[i].pid);
-                    SM[i].is_closed = true;
+                    SM[i].is_closed=true;
                 }
             }
             signal_sem(semid, i);

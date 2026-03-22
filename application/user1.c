@@ -5,12 +5,11 @@
 // Member 2 Name: Aman Tudu
 // Member 2 Roll number: 23CS30004
 
-#include <ksocket.h>
+#include<ksocket.h>
 char buf[MSGSIZE];
 const char *eof_marker = "~";
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
     if(argc != 5){
         printf("Usage: %s <src_ip> <src_port> <dest_ip> <dest_port>\n", argv[0]);
         return -1;
@@ -21,14 +20,12 @@ int main(int argc, char *argv[])
     int dest_port = atoi(argv[4]);
 
     ksockfd_t sockfd = k_socket(AF_INET, SOCK_KTP, 0);
-    if (sockfd < 0)
-    {
+    if(sockfd<0){
         perror("user1: k_socket");
         return -1;
     }
 
-    if ((k_bind(sockfd, src_ip, src_port, dest_ip, dest_port)) < 0)
-    {
+    if((k_bind(sockfd, src_ip, src_port, dest_ip, dest_port))<0){
         perror("user1: k_bind");
         return -1;
     }
@@ -40,25 +37,20 @@ int main(int argc, char *argv[])
 
     // FILE *fp = fopen("./testdata/sample1.txt", "r");
     FILE *fp = fopen("./testdata/sample2.txt", "r");
-    if (fp == NULL)
-    {
+    if(fp==NULL){
         perror("user1: fopen");
         return -1;
     }
     sleep(2);
-    while (1)
-    {
+    while(1){
         size_t bytesRead = fread(buf, 1, MSGSIZE, fp);
-        if (bytesRead == 0)
-        {
-            if (feof(fp))
-            {
+        if(bytesRead==0){
+            if(feof(fp)){
                 printf("user1: End of file reached.\n");
                 memcpy(buf, eof_marker, 1);
                 bytesRead = 1;
             }
-            else
-            {
+            else{
                 perror("user1: fread");
                 fclose(fp);
                 return -1;
@@ -67,11 +59,9 @@ int main(int argc, char *argv[])
 
     again:
         int numbytes = k_sendto(sockfd, buf, bytesRead, 0, (struct sockaddr *)&addr, sizeof(addr));
-        if (numbytes < 0)
-        {
+        if(numbytes<0){
             perror("user1: k_send");
-            if (errno == ENOSPACE || errno == ENOTBOUND)
-            {
+            if(errno==ENOSPACE||errno==ENOTBOUND){
                 sleep(1);
                 goto again;
             }
@@ -80,8 +70,7 @@ int main(int argc, char *argv[])
             return -1;
         }
         printf("user1: Sent %d bytes.\n", numbytes);
-        if(memcmp(buf, eof_marker, 1) == 0)
-        {
+        if(memcmp(buf,eof_marker,1)==0){
             printf("user1: EOF marker sent.\n");
             break;
         }

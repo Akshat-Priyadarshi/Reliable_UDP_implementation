@@ -5,24 +5,24 @@
 // Member 2 Name: Aman Tudu
 // Member 2 Roll number: 23CS30004
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdbool.h>
-#include <unistd.h>
-#include <signal.h>
-#include <sys/select.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <sys/ipc.h>
-#include <sys/shm.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <sys/sem.h>
-#include <errno.h>
-#include <pthread.h>
-#include <time.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<stdbool.h>
+#include<unistd.h>
+#include<signal.h>
+#include<sys/select.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#include<sys/ipc.h>
+#include<sys/shm.h>
+#include<sys/types.h>
+#include<sys/wait.h>
+#include<sys/sem.h>
+#include<errno.h>
+#include<pthread.h>
+#include<time.h>
 
 typedef int ksockfd_t;
 typedef int usockfd_t;

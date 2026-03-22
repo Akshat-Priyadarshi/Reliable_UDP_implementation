@@ -1,4 +1,653 @@
-Shared memory initialized with ID: 32795
-Semaphore initialized with ID: 32770
-SHM 32795 removed
-SEM 32770 removed
+Shared memory initialized with ID: 65547
+Semaphore initialized with ID: 32773
+R: Bound KTP socket 0 to UDP socket 3
+S: DATA 1 through ksocket 0
+S: DATA 2 through ksocket 0
+S: DATA 3 through ksocket 0
+S: DATA 4 through ksocket 0
+S: DATA 5 through ksocket 0
+S: DATA 6 through ksocket 0
+S: DATA 7 through ksocket 0
+S: DATA 8 through ksocket 0
+S: DATA 9 through ksocket 0
+S: DATA 10 through ksocket 0
+R: Bound KTP socket 1 to UDP socket 4
+S: Timeout; DATA 1 through ksocket 0
+S: Timeout; DATA 2 through ksocket 0
+S: Timeout; DATA 3 through ksocket 0
+S: Timeout; DATA 4 through ksocket 0
+S: Timeout; DATA 5 through ksocket 0
+S: Timeout; DATA 6 through ksocket 0
+S: Timeout; DATA 7 through ksocket 0
+S: Timeout; DATA 8 through ksocket 0
+S: Timeout; DATA 9 through ksocket 0
+S: Timeout; DATA 10 through ksocket 0
+R: DATA 1 through ksocket 1
+R: Sent ACK 1 9 through ksocket 1
+R: ACK 1 9 through ksocket 0
+R: DATA 2 through ksocket 1
+R: Sent ACK 2 8 through ksocket 1
+R: ACK 2 8 through ksocket 0
+Dropped: DATA 3 coming through ksocket 1
+Dropped: DATA 4 coming through ksocket 1
+Dropped: DATA 5 coming through ksocket 1
+R: DATA 6 through ksocket 1
+R: DATA 7 through ksocket 1
+R: DATA 8 through ksocket 1
+Dropped: DATA 9 coming through ksocket 1
+R: DATA 10 through ksocket 1
+R: Bound KTP socket 2 to UDP socket 5
+S: DATA 1 through ksocket 2
+S: DATA 2 through ksocket 2
+S: DATA 3 through ksocket 2
+S: DATA 4 through ksocket 2
+S: DATA 5 through ksocket 2
+S: DATA 6 through ksocket 2
+S: DATA 7 through ksocket 2
+S: DATA 8 through ksocket 2
+S: DATA 9 through ksocket 2
+S: DATA 10 through ksocket 2
+R: Bound KTP socket 3 to UDP socket 6
+S: Timeout; DATA 3 through ksocket 0
+S: Timeout; DATA 4 through ksocket 0
+S: Timeout; DATA 5 through ksocket 0
+S: Timeout; DATA 6 through ksocket 0
+S: Timeout; DATA 7 through ksocket 0
+S: Timeout; DATA 8 through ksocket 0
+S: Timeout; DATA 9 through ksocket 0
+S: Timeout; DATA 10 through ksocket 0
+R: DATA 3 through ksocket 1
+R: Sent ACK 3 9 through ksocket 1
+R: ACK 3 9 through ksocket 0
+R: DATA 4 through ksocket 1
+R: Sent ACK 4 8 through ksocket 1
+R: ACK 4 8 through ksocket 0
+Dropped: DATA 5 coming through ksocket 1
+R: DATA 6 through ksocket 1
+R: Duplicate message received: 6	 Sent ACK 4 8 through ksocket 1
+R: ACK 4 8 through ksocket 0
+R: DATA 7 through ksocket 1
+R: Duplicate message received: 7	 Sent ACK 4 8 through ksocket 1
+Dropped: ACK 4 coming through ksocket 0
+R: DATA 8 through ksocket 1
+R: Duplicate message received: 8	 Sent ACK 4 8 through ksocket 1
+R: ACK 4 8 through ksocket 0
+R: DATA 9 through ksocket 1
+R: DATA 10 through ksocket 1
+R: Duplicate message received: 10	 Sent ACK 4 8 through ksocket 1
+R: ACK 4 8 through ksocket 0
+S: DATA 11 through ksocket 0
+S: DATA 12 through ksocket 0
+R: DATA 11 through ksocket 1
+Dropped: DATA 12 coming through ksocket 1
+S: Timeout; DATA 1 through ksocket 2
+S: Timeout; DATA 2 through ksocket 2
+S: Timeout; DATA 3 through ksocket 2
+S: Timeout; DATA 4 through ksocket 2
+S: Timeout; DATA 5 through ksocket 2
+S: Timeout; DATA 6 through ksocket 2
+S: Timeout; DATA 7 through ksocket 2
+S: Timeout; DATA 8 through ksocket 2
+S: Timeout; DATA 9 through ksocket 2
+S: Timeout; DATA 10 through ksocket 2
+R: DATA 1 through ksocket 3
+R: Sent ACK 1 9 through ksocket 3
+R: ACK 1 9 through ksocket 2
+R: DATA 2 through ksocket 3
+R: Sent ACK 2 8 through ksocket 3
+Dropped: ACK 2 coming through ksocket 2
+R: DATA 3 through ksocket 3
+R: Sent ACK 3 7 through ksocket 3
+Dropped: ACK 3 coming through ksocket 2
+R: DATA 4 through ksocket 3
+R: Sent ACK 4 6 through ksocket 3
+R: ACK 4 6 through ksocket 2
+R: DATA 5 through ksocket 3
+R: Sent ACK 5 5 through ksocket 3
+R: ACK 5 5 through ksocket 2
+R: DATA 6 through ksocket 3
+R: Sent ACK 6 4 through ksocket 3
+R: ACK 6 4 through ksocket 2
+R: DATA 7 through ksocket 3
+R: Sent ACK 7 3 through ksocket 3
+R: ACK 7 3 through ksocket 2
+R: DATA 8 through ksocket 3
+R: Sent ACK 8 2 through ksocket 3
+R: ACK 8 2 through ksocket 2
+R: DATA 9 through ksocket 3
+R: Sent ACK 9 1 through ksocket 3
+R: ACK 9 1 through ksocket 2
+R: DATA 10 through ksocket 3
+R: Sent ACK 10 0 through ksocket 3
+Dropped: ACK 10 coming through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+Dropped: ACK 10 coming through ksocket 2
+Dropped: ACK 10 coming through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+Dropped: ACK 10 coming through ksocket 2
+R: ACK 10 10 through ksocket 2
+Dropped: ACK 10 coming through ksocket 2
+S: DATA 11 through ksocket 2
+S: DATA 12 through ksocket 2
+S: DATA 13 through ksocket 2
+S: DATA 14 through ksocket 2
+S: DATA 15 through ksocket 2
+S: DATA 16 through ksocket 2
+S: DATA 17 through ksocket 2
+S: DATA 18 through ksocket 2
+S: DATA 19 through ksocket 2
+S: DATA 20 through ksocket 2
+Dropped: DATA 11 coming through ksocket 3
+R: DATA 12 through ksocket 3
+Dropped: DATA 13 coming through ksocket 3
+Dropped: DATA 14 coming through ksocket 3
+R: DATA 15 through ksocket 3
+R: DATA 16 through ksocket 3
+R: DATA 17 through ksocket 3
+R: DATA 18 through ksocket 3
+Dropped: DATA 19 coming through ksocket 3
+R: DATA 20 through ksocket 3
+S: Timeout; DATA 5 through ksocket 0
+S: Timeout; DATA 6 through ksocket 0
+S: Timeout; DATA 7 through ksocket 0
+S: Timeout; DATA 8 through ksocket 0
+S: Timeout; DATA 9 through ksocket 0
+S: Timeout; DATA 10 through ksocket 0
+S: Timeout; DATA 11 through ksocket 0
+S: Timeout; DATA 12 through ksocket 0
+R: DATA 5 through ksocket 1
+R: Sent ACK 11 3 through ksocket 1
+R: ACK 11 3 through ksocket 0
+R: DATA 6 through ksocket 1
+R: Duplicate message received: 6	 Sent ACK 11 3 through ksocket 1
+R: ACK 11 3 through ksocket 0
+Dropped: DATA 7 coming through ksocket 1
+Dropped: DATA 8 coming through ksocket 1
+R: DATA 9 through ksocket 1
+R: Duplicate message received: 9	 Sent ACK 11 3 through ksocket 1
+R: ACK 11 3 through ksocket 0
+R: DATA 10 through ksocket 1
+R: Duplicate message received: 10	 Sent ACK 11 3 through ksocket 1
+R: ACK 11 3 through ksocket 0
+Dropped: DATA 11 coming through ksocket 1
+R: DATA 12 through ksocket 1
+R: Sent ACK 12 2 through ksocket 1
+R: ACK 12 2 through ksocket 0
+S: DATA 13 through ksocket 0
+S: DATA 14 through ksocket 0
+Dropped: DATA 13 coming through ksocket 1
+R: DATA 14 through ksocket 1
+S: Timeout; DATA 11 through ksocket 2
+S: Timeout; DATA 12 through ksocket 2
+S: Timeout; DATA 13 through ksocket 2
+S: Timeout; DATA 14 through ksocket 2
+S: Timeout; DATA 15 through ksocket 2
+S: Timeout; DATA 16 through ksocket 2
+S: Timeout; DATA 17 through ksocket 2
+S: Timeout; DATA 18 through ksocket 2
+S: Timeout; DATA 19 through ksocket 2
+S: Timeout; DATA 20 through ksocket 2
+R: DATA 11 through ksocket 3
+R: Sent ACK 12 8 through ksocket 3
+Dropped: ACK 12 coming through ksocket 2
+Dropped: DATA 12 coming through ksocket 3
+R: DATA 13 through ksocket 3
+R: Sent ACK 13 7 through ksocket 3
+Dropped: ACK 13 coming through ksocket 2
+R: DATA 14 through ksocket 3
+R: Sent ACK 18 2 through ksocket 3
+Dropped: ACK 18 coming through ksocket 2
+R: DATA 15 through ksocket 3
+R: Duplicate message received: 15	 Sent ACK 18 2 through ksocket 3
+R: ACK 18 2 through ksocket 2
+Dropped: DATA 16 coming through ksocket 3
+Dropped: DATA 17 coming through ksocket 3
+Dropped: DATA 18 coming through ksocket 3
+R: DATA 19 through ksocket 3
+R: Sent ACK 20 0 through ksocket 3
+R: ACK 20 0 through ksocket 2
+Dropped: DATA 20 coming through ksocket 3
+R: ACK 20 10 through ksocket 2
+R: ACK 20 10 through ksocket 2
+R: ACK 20 10 through ksocket 2
+R: ACK 20 10 through ksocket 2
+Dropped: ACK 20 coming through ksocket 2
+R: ACK 20 10 through ksocket 2
+R: ACK 20 10 through ksocket 2
+R: ACK 20 10 through ksocket 2
+R: ACK 20 10 through ksocket 2
+R: ACK 20 10 through ksocket 2
+S: DATA 21 through ksocket 2
+S: DATA 22 through ksocket 2
+S: DATA 23 through ksocket 2
+S: DATA 24 through ksocket 2
+S: DATA 25 through ksocket 2
+S: DATA 26 through ksocket 2
+S: DATA 27 through ksocket 2
+S: DATA 28 through ksocket 2
+S: DATA 29 through ksocket 2
+S: DATA 30 through ksocket 2
+R: DATA 21 through ksocket 3
+R: Sent ACK 21 9 through ksocket 3
+R: ACK 21 9 through ksocket 2
+R: DATA 22 through ksocket 3
+R: Sent ACK 22 8 through ksocket 3
+R: ACK 22 8 through ksocket 2
+R: DATA 23 through ksocket 3
+R: Sent ACK 23 7 through ksocket 3
+R: ACK 23 7 through ksocket 2
+R: DATA 24 through ksocket 3
+R: Sent ACK 24 6 through ksocket 3
+R: ACK 24 6 through ksocket 2
+R: DATA 25 through ksocket 3
+R: Sent ACK 25 5 through ksocket 3
+R: ACK 25 5 through ksocket 2
+R: DATA 26 through ksocket 3
+R: Sent ACK 26 4 through ksocket 3
+Dropped: ACK 26 coming through ksocket 2
+R: DATA 27 through ksocket 3
+R: Sent ACK 27 3 through ksocket 3
+R: ACK 27 3 through ksocket 2
+R: DATA 28 through ksocket 3
+R: Sent ACK 28 2 through ksocket 3
+R: ACK 28 2 through ksocket 2
+R: DATA 29 through ksocket 3
+R: Sent ACK 29 1 through ksocket 3
+R: ACK 29 1 through ksocket 2
+R: DATA 30 through ksocket 3
+R: Sent ACK 30 0 through ksocket 3
+R: ACK 30 0 through ksocket 2
+Dropped: ACK 30 coming through ksocket 2
+Dropped: ACK 30 coming through ksocket 2
+R: ACK 30 10 through ksocket 2
+R: ACK 30 10 through ksocket 2
+R: ACK 30 10 through ksocket 2
+R: ACK 30 10 through ksocket 2
+R: ACK 30 10 through ksocket 2
+R: ACK 30 10 through ksocket 2
+R: ACK 30 10 through ksocket 2
+R: ACK 30 10 through ksocket 2
+S: DATA 31 through ksocket 2
+S: DATA 32 through ksocket 2
+S: DATA 1 through ksocket 2
+S: DATA 2 through ksocket 2
+S: DATA 3 through ksocket 2
+S: DATA 4 through ksocket 2
+S: DATA 5 through ksocket 2
+S: DATA 6 through ksocket 2
+S: DATA 7 through ksocket 2
+S: DATA 8 through ksocket 2
+R: DATA 31 through ksocket 3
+R: Sent ACK 31 9 through ksocket 3
+R: ACK 31 9 through ksocket 2
+R: DATA 32 through ksocket 3
+R: Sent ACK 32 8 through ksocket 3
+Dropped: ACK 32 coming through ksocket 2
+Dropped: DATA 1 coming through ksocket 3
+R: DATA 2 through ksocket 3
+R: DATA 3 through ksocket 3
+R: DATA 4 through ksocket 3
+R: DATA 5 through ksocket 3
+R: DATA 6 through ksocket 3
+Dropped: DATA 7 coming through ksocket 3
+R: DATA 8 through ksocket 3
+S: Timeout; DATA 13 through ksocket 0
+S: Timeout; DATA 14 through ksocket 0
+R: DATA 13 through ksocket 1
+R: Sent ACK 14 8 through ksocket 1
+R: ACK 14 8 through ksocket 0
+R: DATA 14 through ksocket 1
+R: Duplicate message received: 14	 Sent ACK 14 8 through ksocket 1
+R: ACK 14 8 through ksocket 0
+S: DATA 15 through ksocket 0
+S: DATA 16 through ksocket 0
+S: DATA 17 through ksocket 0
+S: DATA 18 through ksocket 0
+S: DATA 19 through ksocket 0
+S: DATA 20 through ksocket 0
+S: DATA 21 through ksocket 0
+S: DATA 22 through ksocket 0
+R: DATA 15 through ksocket 1
+R: Sent ACK 15 9 through ksocket 1
+R: ACK 15 9 through ksocket 0
+Dropped: DATA 16 coming through ksocket 1
+Dropped: DATA 17 coming through ksocket 1
+R: DATA 18 through ksocket 1
+Dropped: DATA 19 coming through ksocket 1
+R: DATA 20 through ksocket 1
+R: DATA 21 through ksocket 1
+R: DATA 22 through ksocket 1
+S: DATA 23 through ksocket 0
+S: DATA 24 through ksocket 0
+Dropped: DATA 23 coming through ksocket 1
+R: DATA 24 through ksocket 1
+S: Timeout; DATA 32 through ksocket 2
+S: Timeout; DATA 1 through ksocket 2
+S: Timeout; DATA 2 through ksocket 2
+S: Timeout; DATA 3 through ksocket 2
+S: Timeout; DATA 4 through ksocket 2
+S: Timeout; DATA 5 through ksocket 2
+S: Timeout; DATA 6 through ksocket 2
+S: Timeout; DATA 7 through ksocket 2
+S: Timeout; DATA 8 through ksocket 2
+R: DATA 32 through ksocket 3
+R: Duplicate message received: 32	 Sent ACK 32 10 through ksocket 3
+Dropped: ACK 32 coming through ksocket 2
+Dropped: DATA 1 coming through ksocket 3
+Dropped: DATA 2 coming through ksocket 3
+R: DATA 3 through ksocket 3
+R: Duplicate message received: 3	 Sent ACK 32 10 through ksocket 3
+R: ACK 32 10 through ksocket 2
+R: DATA 4 through ksocket 3
+R: Duplicate message received: 4	 Sent ACK 32 10 through ksocket 3
+R: ACK 32 10 through ksocket 2
+R: DATA 5 through ksocket 3
+R: Duplicate message received: 5	 Sent ACK 32 10 through ksocket 3
+R: ACK 32 10 through ksocket 2
+R: DATA 6 through ksocket 3
+R: Duplicate message received: 6	 Sent ACK 32 10 through ksocket 3
+R: ACK 32 10 through ksocket 2
+Dropped: DATA 7 coming through ksocket 3
+Dropped: DATA 8 coming through ksocket 3
+S: DATA 9 through ksocket 2
+S: DATA 10 through ksocket 2
+R: DATA 9 through ksocket 3
+R: DATA 10 through ksocket 3
+S: Timeout; DATA 16 through ksocket 0
+S: Timeout; DATA 17 through ksocket 0
+S: Timeout; DATA 18 through ksocket 0
+S: Timeout; DATA 19 through ksocket 0
+S: Timeout; DATA 20 through ksocket 0
+S: Timeout; DATA 21 through ksocket 0
+S: Timeout; DATA 22 through ksocket 0
+S: Timeout; DATA 23 through ksocket 0
+S: Timeout; DATA 24 through ksocket 0
+R: DATA 16 through ksocket 1
+R: Sent ACK 16 9 through ksocket 1
+R: ACK 16 9 through ksocket 0
+R: DATA 17 through ksocket 1
+R: Sent ACK 18 7 through ksocket 1
+Dropped: ACK 18 coming through ksocket 0
+R: DATA 18 through ksocket 1
+R: Duplicate message received: 18	 Sent ACK 18 7 through ksocket 1
+R: ACK 18 7 through ksocket 0
+Dropped: DATA 19 coming through ksocket 1
+Dropped: DATA 20 coming through ksocket 1
+R: DATA 21 through ksocket 1
+R: Duplicate message received: 21	 Sent ACK 18 7 through ksocket 1
+R: ACK 18 7 through ksocket 0
+R: DATA 22 through ksocket 1
+R: Duplicate message received: 22	 Sent ACK 18 7 through ksocket 1
+Dropped: ACK 18 coming through ksocket 0
+Dropped: DATA 23 coming through ksocket 1
+R: DATA 24 through ksocket 1
+R: Duplicate message received: 24	 Sent ACK 18 7 through ksocket 1
+R: ACK 18 7 through ksocket 0
+S: DATA 25 through ksocket 0
+R: DATA 25 through ksocket 1
+S: Timeout; DATA 1 through ksocket 2
+S: Timeout; DATA 2 through ksocket 2
+S: Timeout; DATA 3 through ksocket 2
+S: Timeout; DATA 4 through ksocket 2
+S: Timeout; DATA 5 through ksocket 2
+S: Timeout; DATA 6 through ksocket 2
+S: Timeout; DATA 7 through ksocket 2
+S: Timeout; DATA 8 through ksocket 2
+S: Timeout; DATA 9 through ksocket 2
+S: Timeout; DATA 10 through ksocket 2
+R: DATA 1 through ksocket 3
+R: Sent ACK 6 4 through ksocket 3
+R: ACK 6 4 through ksocket 2
+Dropped: DATA 2 coming through ksocket 3
+R: DATA 3 through ksocket 3
+R: Duplicate message received: 3	 Sent ACK 6 4 through ksocket 3
+R: ACK 6 4 through ksocket 2
+R: DATA 4 through ksocket 3
+R: Duplicate message received: 4	 Sent ACK 6 4 through ksocket 3
+Dropped: ACK 6 coming through ksocket 2
+R: DATA 5 through ksocket 3
+R: Duplicate message received: 5	 Sent ACK 6 4 through ksocket 3
+R: ACK 6 4 through ksocket 2
+R: DATA 6 through ksocket 3
+R: Duplicate message received: 6	 Sent ACK 6 4 through ksocket 3
+Dropped: ACK 6 coming through ksocket 2
+R: DATA 7 through ksocket 3
+R: Sent ACK 10 0 through ksocket 3
+R: ACK 10 0 through ksocket 2
+R: DATA 8 through ksocket 3
+R: Duplicate message received: 8	 Sent ACK 10 0 through ksocket 3
+R: ACK 10 0 through ksocket 2
+R: DATA 9 through ksocket 3
+R: Duplicate message received: 9	 Sent ACK 10 0 through ksocket 3
+Dropped: ACK 10 coming through ksocket 2
+R: DATA 10 through ksocket 3
+R: Duplicate message received: 10	 Sent ACK 10 0 through ksocket 3
+R: ACK 10 0 through ksocket 2
+Dropped: ACK 10 coming through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+Dropped: ACK 10 coming through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+R: ACK 10 10 through ksocket 2
+S: DATA 11 through ksocket 2
+S: DATA 12 through ksocket 2
+S: DATA 13 through ksocket 2
+R: DATA 11 through ksocket 3
+R: Sent ACK 11 9 through ksocket 3
+Dropped: ACK 11 coming through ksocket 2
+R: DATA 12 through ksocket 3
+R: Sent ACK 12 8 through ksocket 3
+R: ACK 12 8 through ksocket 2
+R: DATA 13 through ksocket 3
+R: Sent ACK 13 7 through ksocket 3
+R: ACK 13 7 through ksocket 2
+S: Timeout; DATA 19 through ksocket 0
+S: Timeout; DATA 20 through ksocket 0
+S: Timeout; DATA 21 through ksocket 0
+S: Timeout; DATA 22 through ksocket 0
+S: Timeout; DATA 23 through ksocket 0
+S: Timeout; DATA 24 through ksocket 0
+S: Timeout; DATA 25 through ksocket 0
+S: FIN through ksocket 3
+Dropped: DATA 19 coming through ksocket 1
+Dropped: DATA 20 coming through ksocket 1
+Dropped: DATA 21 coming through ksocket 1
+R: DATA 22 through ksocket 1
+R: Duplicate message received: 22	 Sent ACK 18 10 through ksocket 1
+R: ACK 18 10 through ksocket 0
+R: DATA 23 through ksocket 1
+R: DATA 24 through ksocket 1
+R: Duplicate message received: 24	 Sent ACK 18 10 through ksocket 1
+R: ACK 18 10 through ksocket 0
+R: DATA 25 through ksocket 1
+R: Duplicate message received: 25	 Sent ACK 18 10 through ksocket 1
+R: ACK 18 10 through ksocket 0
+Dropped: FIN 0 coming through ksocket 2
+S: DATA 26 through ksocket 0
+S: DATA 27 through ksocket 0
+S: DATA 28 through ksocket 0
+R: DATA 26 through ksocket 1
+Dropped: DATA 27 coming through ksocket 1
+R: DATA 28 through ksocket 1
+S: FIN through ksocket 3 (retry 1)
+R: FIN through ksocket 2
+Closed KTP socket 2
+Dropped: FAK 0 coming through ksocket 3
+S: Timeout; DATA 19 through ksocket 0
+S: Timeout; DATA 20 through ksocket 0
+S: Timeout; DATA 21 through ksocket 0
+S: Timeout; DATA 22 through ksocket 0
+S: Timeout; DATA 23 through ksocket 0
+S: Timeout; DATA 24 through ksocket 0
+S: Timeout; DATA 25 through ksocket 0
+S: Timeout; DATA 26 through ksocket 0
+S: Timeout; DATA 27 through ksocket 0
+S: Timeout; DATA 28 through ksocket 0
+Dropped: DATA 19 coming through ksocket 1
+Dropped: DATA 20 coming through ksocket 1
+R: DATA 21 through ksocket 1
+R: Duplicate message received: 21	 Sent ACK 18 10 through ksocket 1
+Dropped: ACK 18 coming through ksocket 0
+Dropped: DATA 22 coming through ksocket 1
+R: DATA 23 through ksocket 1
+R: Duplicate message received: 23	 Sent ACK 18 10 through ksocket 1
+Dropped: ACK 18 coming through ksocket 0
+R: DATA 24 through ksocket 1
+R: Duplicate message received: 24	 Sent ACK 18 10 through ksocket 1
+Dropped: ACK 18 coming through ksocket 0
+R: DATA 25 through ksocket 1
+R: Duplicate message received: 25	 Sent ACK 18 10 through ksocket 1
+R: ACK 18 10 through ksocket 0
+R: DATA 26 through ksocket 1
+R: Duplicate message received: 26	 Sent ACK 18 10 through ksocket 1
+R: ACK 18 10 through ksocket 0
+R: DATA 27 through ksocket 1
+R: DATA 28 through ksocket 1
+R: Duplicate message received: 28	 Sent ACK 18 10 through ksocket 1
+Dropped: ACK 18 coming through ksocket 0
+S: FIN through ksocket 3 (retry 2)
+S: FIN through ksocket 3 (retry 3)
+S: Timeout; DATA 19 through ksocket 0
+S: Timeout; DATA 20 through ksocket 0
+S: Timeout; DATA 21 through ksocket 0
+S: Timeout; DATA 22 through ksocket 0
+S: Timeout; DATA 23 through ksocket 0
+S: Timeout; DATA 24 through ksocket 0
+S: Timeout; DATA 25 through ksocket 0
+S: Timeout; DATA 26 through ksocket 0
+S: Timeout; DATA 27 through ksocket 0
+S: Timeout; DATA 28 through ksocket 0
+R: DATA 19 through ksocket 1
+R: Sent ACK 28 0 through ksocket 1
+R: ACK 28 0 through ksocket 0
+R: DATA 20 through ksocket 1
+R: Duplicate message received: 20	 Sent ACK 28 0 through ksocket 1
+R: ACK 28 0 through ksocket 0
+R: DATA 21 through ksocket 1
+R: Duplicate message received: 21	 Sent ACK 28 0 through ksocket 1
+R: ACK 28 0 through ksocket 0
+Dropped: DATA 22 coming through ksocket 1
+R: DATA 23 through ksocket 1
+R: Duplicate message received: 23	 Sent ACK 28 0 through ksocket 1
+R: ACK 28 0 through ksocket 0
+Dropped: DATA 24 coming through ksocket 1
+R: DATA 25 through ksocket 1
+R: Duplicate message received: 25	 Sent ACK 28 0 through ksocket 1
+R: ACK 28 0 through ksocket 0
+Dropped: DATA 26 coming through ksocket 1
+Dropped: DATA 27 coming through ksocket 1
+R: DATA 28 through ksocket 1
+R: Duplicate message received: 28	 Sent ACK 28 0 through ksocket 1
+R: ACK 28 0 through ksocket 0
+R: ACK 28 10 through ksocket 0
+R: ACK 28 10 through ksocket 0
+R: ACK 28 10 through ksocket 0
+R: ACK 28 10 through ksocket 0
+R: ACK 28 10 through ksocket 0
+R: ACK 28 10 through ksocket 0
+Dropped: ACK 28 coming through ksocket 0
+Dropped: ACK 28 coming through ksocket 0
+Dropped: ACK 28 coming through ksocket 0
+Dropped: ACK 28 coming through ksocket 0
+R: ACK 28 10 through ksocket 0
+Dropped: ACK 28 coming through ksocket 0
+R: ACK 28 10 through ksocket 0
+R: ACK 28 10 through ksocket 0
+Dropped: ACK 28 coming through ksocket 0
+Dropped: ACK 28 coming through ksocket 0
+Dropped: ACK 28 coming through ksocket 0
+R: ACK 28 10 through ksocket 0
+S: DATA 29 through ksocket 0
+S: DATA 30 through ksocket 0
+S: DATA 31 through ksocket 0
+S: DATA 32 through ksocket 0
+S: DATA 1 through ksocket 0
+S: DATA 2 through ksocket 0
+S: DATA 3 through ksocket 0
+S: DATA 4 through ksocket 0
+S: DATA 5 through ksocket 0
+S: DATA 6 through ksocket 0
+R: DATA 29 through ksocket 1
+R: Sent ACK 29 9 through ksocket 1
+R: ACK 29 9 through ksocket 0
+R: DATA 30 through ksocket 1
+R: Sent ACK 30 8 through ksocket 1
+R: ACK 30 8 through ksocket 0
+R: DATA 31 through ksocket 1
+R: Sent ACK 31 7 through ksocket 1
+R: ACK 31 7 through ksocket 0
+R: DATA 32 through ksocket 1
+R: Sent ACK 32 6 through ksocket 1
+Dropped: ACK 32 coming through ksocket 0
+R: DATA 1 through ksocket 1
+R: Sent ACK 1 5 through ksocket 1
+R: ACK 1 5 through ksocket 0
+R: DATA 2 through ksocket 1
+R: Sent ACK 2 4 through ksocket 1
+R: ACK 2 4 through ksocket 0
+R: DATA 3 through ksocket 1
+R: Sent ACK 3 3 through ksocket 1
+R: ACK 3 3 through ksocket 0
+Dropped: DATA 4 coming through ksocket 1
+R: DATA 5 through ksocket 1
+R: DATA 6 through ksocket 1
+S: FIN through ksocket 3 (retry 4)
+S: FIN through ksocket 3 (retry 5)
+S: Timeout; DATA 4 through ksocket 0
+S: Timeout; DATA 5 through ksocket 0
+S: Timeout; DATA 6 through ksocket 0
+R: DATA 4 through ksocket 1
+R: Sent ACK 6 7 through ksocket 1
+R: ACK 6 7 through ksocket 0
+R: DATA 5 through ksocket 1
+R: Duplicate message received: 5	 Sent ACK 6 7 through ksocket 1
+R: ACK 6 7 through ksocket 0
+R: DATA 6 through ksocket 1
+R: Duplicate message received: 6	 Sent ACK 6 7 through ksocket 1
+Dropped: ACK 6 coming through ksocket 0
+S: DATA 7 through ksocket 0
+S: DATA 8 through ksocket 0
+S: DATA 9 through ksocket 0
+S: DATA 10 through ksocket 0
+S: DATA 11 through ksocket 0
+S: DATA 12 through ksocket 0
+S: DATA 13 through ksocket 0
+R: DATA 7 through ksocket 1
+R: Sent ACK 7 9 through ksocket 1
+R: ACK 7 9 through ksocket 0
+R: DATA 8 through ksocket 1
+R: Sent ACK 8 8 through ksocket 1
+Dropped: ACK 8 coming through ksocket 0
+R: DATA 9 through ksocket 1
+R: Sent ACK 9 7 through ksocket 1
+R: ACK 9 7 through ksocket 0
+R: DATA 10 through ksocket 1
+R: Sent ACK 10 6 through ksocket 1
+R: ACK 10 6 through ksocket 0
+R: DATA 11 through ksocket 1
+R: Sent ACK 11 5 through ksocket 1
+Dropped: ACK 11 coming through ksocket 0
+R: DATA 12 through ksocket 1
+R: Sent ACK 12 4 through ksocket 1
+R: ACK 12 4 through ksocket 0
+R: DATA 13 through ksocket 1
+R: Sent ACK 13 3 through ksocket 1
+R: ACK 13 3 through ksocket 0
+S: FIN through ksocket 1
+S: FAK not received; closing ksocket 3
+Closed KTP socket 3
+Dropped: FIN 0 coming through ksocket 0
+S: FIN through ksocket 1 (retry 1)
+R: FIN through ksocket 0
+Closed KTP socket 0
+R: FAK through ksocket 1
+Closed KTP socket 1
+SHM 65547 removed
+SEM 32773 removed

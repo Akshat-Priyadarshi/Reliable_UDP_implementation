@@ -5,7 +5,7 @@
 // Member 2 Name: Aman Tudu
 // Member 2 Roll number: 23CS30004
 
-#include <ksocket.h>
+#include<ksocket.h>
 char buf[MSGSIZE];
 const char *eof_marker = "~";
 
@@ -21,14 +21,12 @@ int main(int argc, char *argv[])
     int dest_port = atoi(argv[4]);
 
     ksockfd_t sockfd = k_socket(AF_INET, SOCK_KTP, 0);
-    if (sockfd < 0)
-    {
+    if(sockfd<0){
         perror("user2: k_socket");
         return -1;
     }
 
-    if ((k_bind(sockfd, src_ip, src_port, dest_ip, dest_port)) < 0)
-    {
+    if((k_bind(sockfd, src_ip, src_port, dest_ip, dest_port))<0){
         perror("user2: k_bind");
         return -1;
     }
@@ -36,20 +34,16 @@ int main(int argc, char *argv[])
     char filename[100];
     snprintf(filename, sizeof(filename), "results/received_%d.txt", src_port);
     FILE *fp = fopen(filename, "w");
-    if (fp == NULL)
-    {
+    if(fp==NULL){
         perror("user2: fopen");
         return -1;
     }
     sleep(2);
-    while (1)
-    {
+    while(1){
         int n = k_recvfrom(sockfd, buf, MSGSIZE, 0, NULL, 0);
-        if (n < 0)
-        {
+        if(n<0){
             perror("user2: k_recv");
-            if (errno == ENOMESSAGE)
-            {
+            if(errno==ENOMESSAGE){
                 sleep(1);
                 continue;
             }
@@ -60,8 +54,7 @@ int main(int argc, char *argv[])
 
         printf("user2: received %d bytes\n", n);
 
-        if (memcmp(buf, eof_marker, 1) == 0)
-        {
+        if(memcmp(buf,eof_marker,1)==0){
             printf("user2: EOF marker received\n");
             break;
         }
