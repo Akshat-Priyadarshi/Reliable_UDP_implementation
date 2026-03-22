@@ -1,5 +1,4 @@
-.PHONY: all library init user1 user2 run-init run-user1 run-user2 clean distclean
-
+.PHONY: all library init user1 user2 run-init run-user1 run-user2 run-user3 run-user4 clean distclean
 all: init user1 user2
 
 
