@@ -1,3 +1,10 @@
+// Mini Project 1 Submission
+// Group Details:
+// Member 1 Name: Akshat Priyadarshi
+// Member 1 Roll number: 23CS30003
+// Member 2 Name: Aman Tudu
+// Member 2 Roll number: 23CS30004
+
 #include <ksocket.h>
 #define SELECT_TIMEOUT 100000
 #define CLOSE_SOCKET(i) do { \

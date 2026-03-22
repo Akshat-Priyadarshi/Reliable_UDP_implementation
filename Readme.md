@@ -67,6 +67,8 @@ make run-init
 
 This starts our background initialization process. It is responsible for managing shared memory, handling protocol threads, and maintaining the buffering and retransmission logic that ensures our UDP packets remain reliable.
 
+
+
 ### Start User Applications
 In two separate terminals, run the user processes to begin data transfer:
 
@@ -82,7 +84,22 @@ make run-user2
 
 These processes communicate using the **KTP socket abstraction**. This layer handles the complexities of the sliding window protocol, ensuring that the data sent between users arrives in the correct order despite being transmitted over an unreliable UDP base.
 
+Our implemenation also supports more than 2 users, for which we have added two make targets for two more users, in two new terminals run the commands.
+
+**User 3:**
+```bash
+make run-user3
+```
+
+**User 4:**
+```bash
+make run-user4
+```
+
+Overall this is not limited to any number of users, one can run the executables generated from user1.c and user2.c with proper arguments and different pair of sockets for {sender, receiver} pair.
+
 ---
+
 
 ## Clean Build Files
 

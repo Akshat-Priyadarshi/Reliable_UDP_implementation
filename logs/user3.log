@@ -1,0 +1,855 @@
+=============== Socket created with ksockfd: 2
+=============== Socket bound with ksockfd: 2 src_port: 30005 dest_port: 30006
+
+=============== k_sendto: Message The Ghost in the Machine: Five Decades of Operating Systems
+This is the 1st paragraph. In the early days, "operating" a computer meant physical labor, where programmers manually toggled switches or fed punched cards into a reader. Our project tracks how we moved from this mechanical struggle to the seamless, multi-threaded kernels that power our devices today in a fraction of a second.
+
+This is the 2nd fact about operating systems. Before actual kernels existed, computers ran "Batch Processing" systems. I a sent with ksockfd: 2 seq_no: 1 index: 0
+user1: Sent 512 bytes.
+=============== k_sendto: Message m documenting how users would submit a tray of cards to a human operator, who would run them one by one, meaning a single typo could result in a 24-hour wait for results.
+
+This is the 3rd fact about operating systems. The first recognizable OS was the GM-NAA I/O, created in 1956 for the IBM 704. It was designed to automatically start the next job when the current one finished, which was the very first step toward automating the hardware we use in our implementation.
+
+This is the 4th story about operating sy sent with ksockfd: 2 seq_no: 2 index: 1
+user1: Sent 512 bytes.
+=============== k_sendto: Message stems. In the early 1960s, "Time-Sharing" changed everything. Systems like CTSS allowed multiple users to log in simultaneously, creating the illusion that each person had the entire computer to themselves, a concept fundamental to the concurrency I am testing here.
+
+This is the 5th story about operating systems. The Multics project was an ambitious attempt to create a "computer utility." While it was ultimately too complex for its time, its failure led two researchers, Ken Thompson and Dennis Ritchie, to s sent with ksockfd: 2 seq_no: 3 index: 2
+user1: Sent 512 bytes.
+=============== k_sendto: Message tart a smaller, simpler project that they jokingly called Unics.
+
+This is the 6th fact about operating systems. Unix was originally written in assembly language, which meant it could only run on one specific type of machine. In 1973, the team took the radical step of rewriting the entire kernel in the C programming language to make it portable.
+
+This is the 7th fact about operating systems. The invention of the "Pipe" in Unix allowed the output of one program to become the input of another. This modularity  sent with ksockfd: 2 seq_no: 4 index: 3
+user1: Sent 512 bytes.
+=============== k_sendto: Message is a great parallel to how I handle data packets in our implementation, where one layer’s output feeds directly into the next.
+
+This is the 8th story about operating systems. While Unix ruled the labs, the 70s saw the rise of CP/M for microcomputers. It introduced the concept of a Basic Input/Output System (BIOS), which separated the high-level OS commands from the specific, messy details of the hardware.
+
+This is the 9th fact about operating systems. In 1980, Microsoft didn't actually write their first O sent with ksockfd: 2 seq_no: 5 index: 4
+user1: Sent 512 bytes.
+=============== k_sendto: Message S. They bought "QDOS" (Quick and Dirty Operating System) from Seattle Computer Products, renamed it MS-DOS, and licensed it to IBM, changing the course of computing history forever.
+
+This is the 10th story about operating systems. The Graphical User Interface (GUI) wasn't invented by Apple or Microsoft, but at Xerox PARC. Their "Alto" computer used a mouse, windows, and icons back in 1973, though it was considered too expensive for the general public at the time.
+
+This is the 11th fact about operating syste sent with ksockfd: 2 seq_no: 6 index: 5
+user1: Sent 512 bytes.
+=============== k_sendto: Message ms. Apple’s Lisa and the subsequent Macintosh brought the "Desktop Metaphor" to the masses in 1984. It forced the OS to handle complex memory management for graphics, much more demanding than the simple text-based shells of the past.
+
+This is the 12th story about operating systems. Windows 1.0 was released in 1985, but it wasn't a true OS; it was just a "shell" that ran on top of MS-DOS. It struggled with "Cooperative Multitasking," where one frozen app could crash the entire computer.
+
+This is the 13th f sent with ksockfd: 2 seq_no: 7 index: 6
+user1: Sent 512 bytes.
+=============== k_sendto: Message act about operating systems. The debate between "Monolithic" and "Microkernels" defined the late 80s. Monolithic kernels (like Linux) put everything in one big block, while Microkernels (like Mach) try to keep the core as small as possible for better stability.
+
+This is the 14th story about operating systems. In 1987, Andrew Tanenbaum created MINIX, a small Unix-like OS for educational purposes. He wanted students to see the source code, which eventually inspired a young student in Finland to try building s sent with ksockfd: 2 seq_no: 8 index: 7
+user1: Sent 512 bytes.
+=============== k_sendto: Message omething of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the  sent with ksockfd: 2 seq_no: 9 index: 8
+user1: Sent 512 bytes.
+=============== k_sendto: Message fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 10 index: 9
+user1: Sent 512 bytes.
+=============== k_sendto: Message how I am organizing the data chunks in our current project.
+
+This is the 19th story about operating systems. In the 90s, BeOS was the "cool" alternative, designed specifically for digital media. It was so fast and multithreaded that it could play multiple videos at once when Windows would still struggle with one, though it eventually lost the market war.
+
+This is the 20th fact about operating systems. Windows NT, released in 1993, was a massive shift for Microsoft. It abandoned the old MS-DOS foundation in m documenting how users would submit a tray of cards to a human operator, who would run them one by one, meaning a single typo could result in a 24-hour wait for results.
+
+This is the 3rd fact about operating systems. The first recognizable OS was the GM-NAA I/O, created in 1956 for the IBM 704. It was designed to automatically start the next job when the current one finished, which was the very first step toward automating the hardware we use in our implementation.
+
+This is the 4th story about operating systems. In the early 1960s, "Time-Sharing" changed everything. Systems like CTSS allowed multiple users to log in simultaneously, creating the illusion that each person had the entire computer to themselves, a concept fundamental to the concurrency I am testing here.
+
+This is the 5th story about operating systems. The Multics project was an ambitious attempt to create a "computer utility." While it was ultimately too complex for its time, its failure led two researchers, Ken Thompson and Dennis Ritchie, to start a smaller, simpler project that they jokingly called Unics.
+
+This is the 6th fact about operating systems. Unix was originally written in assembly language, which meant it could only run on one specific type of machine. In 1973, the team took the radical step of rewriting the entire kernel in the C programming language to make it portable.
+
+This is the 7th fact about operating systems. The invention of the "Pipe" in Unix allowed the output of one program to become the input of another. This modularity is a great parallel to how I handle data packets in our implementation, where one layer’s output feeds directly into the next.
+
+This is the 8th story about operating systems. While Unix ruled the labs, the 70s saw the rise of CP/M for microcomputers. It introduced the concept of a Basic Input/Output System (BIOS), which separated the high-level OS commands from the specific, messy details of the hardware.
+
+This is the 9th fact about operating systems. In 1980, Microsoft didn't actually write their first OS. They bought "QDOS" (Quick and Dirty Operating System) from Seattle Computer Products, renamed it MS-DOS, and licensed it to IBM, changing the course of computing history forever.
+
+This is the 10th story about operating systems. The Graphical User Interface (GUI) wasn't invented by Apple or Microsoft, but at Xerox PARC. Their "Alto" computer used a mouse, windows, and icons back in 1973, though it was considered too expensive for the general public at the time.
+
+This is the 11th fact about operating systems. Apple’s Lisa and the subsequent Macintosh brought the "Desktop Metaphor" to the masses in 1984. It forced the OS to handle complex memory management for graphics, much more demanding than the simple text-based shells of the past.
+
+This is the 12th story about operating systems. Windows 1.0 was released in 1985, but it wasn't a true OS; it was just a "shell" that ran on top of MS-DOS. It struggled with "Cooperative Multitasking," where one frozen app could crash the entire computer.
+
+This is the 13th fact about operating systems. The debate between "Monolithic" and "Microkernels" defined the late 80s. Monolithic kernels (like Linux) put everything in one big block, while Microkernels (like Mach) try to keep the core as small as possible for better stability.
+
+This is the 14th story about operating systems. In 1987, Andrew Tanenbaum created MINIX, a small Unix-like OS for educational purposes. He wanted students to see the source code, which eventually inspired a young student in Finland to try building something of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 11 index: 0
+user1: Sent 512 bytes.
+=============== k_sendto: Message favor of a modern, "New Technology" kernel that provided actual security and stability for professional workstations.
+
+This is the 21st story about operating systems. When Steve Jobs returned to Apple, he brought the NeXTSTEP OS with him. Its Unix-based foundation became the "Darwin" kernel, which serves as the core of every macOS and iOS device in existence today.
+
+This is the 22nd fact about operating systems. POSIX is a set of standards that ensures different OSs can talk to each other. By following thesstems. In the early 1960s, "Time-Sharing" changed everything. Systems like CTSS allowed multiple users to log in simultaneously, creating the illusion that each person had the entire computer to themselves, a concept fundamental to the concurrency I am testing here.
+
+This is the 5th story about operating systems. The Multics project was an ambitious attempt to create a "computer utility." While it was ultimately too complex for its time, its failure led two researchers, Ken Thompson and Dennis Ritchie, to start a smaller, simpler project that they jokingly called Unics.
+
+This is the 6th fact about operating systems. Unix was originally written in assembly language, which meant it could only run on one specific type of machine. In 1973, the team took the radical step of rewriting the entire kernel in the C programming language to make it portable.
+
+This is the 7th fact about operating systems. The invention of the "Pipe" in Unix allowed the output of one program to become the input of another. This modularity is a great parallel to how I handle data packets in our implementation, where one layer’s output feeds directly into the next.
+
+This is the 8th story about operating systems. While Unix ruled the labs, the 70s saw the rise of CP/M for microcomputers. It introduced the concept of a Basic Input/Output System (BIOS), which separated the high-level OS commands from the specific, messy details of the hardware.
+
+This is the 9th fact about operating systems. In 1980, Microsoft didn't actually write their first OS. They bought "QDOS" (Quick and Dirty Operating System) from Seattle Computer Products, renamed it MS-DOS, and licensed it to IBM, changing the course of computing history forever.
+
+This is the 10th story about operating systems. The Graphical User Interface (GUI) wasn't invented by Apple or Microsoft, but at Xerox PARC. Their "Alto" computer used a mouse, windows, and icons back in 1973, though it was considered too expensive for the general public at the time.
+
+This is the 11th fact about operating systems. Apple’s Lisa and the subsequent Macintosh brought the "Desktop Metaphor" to the masses in 1984. It forced the OS to handle complex memory management for graphics, much more demanding than the simple text-based shells of the past.
+
+This is the 12th story about operating systems. Windows 1.0 was released in 1985, but it wasn't a true OS; it was just a "shell" that ran on top of MS-DOS. It struggled with "Cooperative Multitasking," where one frozen app could crash the entire computer.
+
+This is the 13th fact about operating systems. The debate between "Monolithic" and "Microkernels" defined the late 80s. Monolithic kernels (like Linux) put everything in one big block, while Microkernels (like Mach) try to keep the core as small as possible for better stability.
+
+This is the 14th story about operating systems. In 1987, Andrew Tanenbaum created MINIX, a small Unix-like OS for educational purposes. He wanted students to see the source code, which eventually inspired a young student in Finland to try building something of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 12 index: 1
+user1: Sent 512 bytes.
+=============== k_sendto: Message e rules, a programmer can write code on Linux and have a good chance of it running on Unix or macOS without major changes.
+
+This is the 23rd fact about operating systems. The "Blue Screen of Death" became a cultural icon of the 90s. It was the OS’s way of saying it hit a "Kernel Panic"—a state where the system detects a fatal error it cannot safely recover from without rebooting.
+
+This is the 24th story about operating systems. In 2008, Google released Android, which is essentially a specialized Linux ktart a smaller, simpler project that they jokingly called Unics.
+
+This is the 6th fact about operating systems. Unix was originally written in assembly language, which meant it could only run on one specific type of machine. In 1973, the team took the radical step of rewriting the entire kernel in the C programming language to make it portable.
+
+This is the 7th fact about operating systems. The invention of the "Pipe" in Unix allowed the output of one program to become the input of another. This modularity is a great parallel to how I handle data packets in our implementation, where one layer’s output feeds directly into the next.
+
+This is the 8th story about operating systems. While Unix ruled the labs, the 70s saw the rise of CP/M for microcomputers. It introduced the concept of a Basic Input/Output System (BIOS), which separated the high-level OS commands from the specific, messy details of the hardware.
+
+This is the 9th fact about operating systems. In 1980, Microsoft didn't actually write their first OS. They bought "QDOS" (Quick and Dirty Operating System) from Seattle Computer Products, renamed it MS-DOS, and licensed it to IBM, changing the course of computing history forever.
+
+This is the 10th story about operating systems. The Graphical User Interface (GUI) wasn't invented by Apple or Microsoft, but at Xerox PARC. Their "Alto" computer used a mouse, windows, and icons back in 1973, though it was considered too expensive for the general public at the time.
+
+This is the 11th fact about operating systems. Apple’s Lisa and the subsequent Macintosh brought the "Desktop Metaphor" to the masses in 1984. It forced the OS to handle complex memory management for graphics, much more demanding than the simple text-based shells of the past.
+
+This is the 12th story about operating systems. Windows 1.0 was released in 1985, but it wasn't a true OS; it was just a "shell" that ran on top of MS-DOS. It struggled with "Cooperative Multitasking," where one frozen app could crash the entire computer.
+
+This is the 13th fact about operating systems. The debate between "Monolithic" and "Microkernels" defined the late 80s. Monolithic kernels (like Linux) put everything in one big block, while Microkernels (like Mach) try to keep the core as small as possible for better stability.
+
+This is the 14th story about operating systems. In 1987, Andrew Tanenbaum created MINIX, a small Unix-like OS for educational purposes. He wanted students to see the source code, which eventually inspired a young student in Finland to try building something of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 13 index: 2
+user1: Sent 512 bytes.
+=============== k_sendto: Message ernel with a Java-based UI on top. It proved that a desktop-grade kernel could be stripped down to fit into the palm of our hands.
+
+This is the 25th fact about operating systems. Virtualization allows one "Host" OS to run multiple "Guest" OSs simultaneously. This is done via a Hypervisor, which tricks each guest into thinking it has direct access to the physical CPU and memory.
+
+This is the 26th fact about operating systems. Containerization, popularized by Docker, takes virtualization further. Instead of eis a great parallel to how I handle data packets in our implementation, where one layer’s output feeds directly into the next.
+
+This is the 8th story about operating systems. While Unix ruled the labs, the 70s saw the rise of CP/M for microcomputers. It introduced the concept of a Basic Input/Output System (BIOS), which separated the high-level OS commands from the specific, messy details of the hardware.
+
+This is the 9th fact about operating systems. In 1980, Microsoft didn't actually write their first OS. They bought "QDOS" (Quick and Dirty Operating System) from Seattle Computer Products, renamed it MS-DOS, and licensed it to IBM, changing the course of computing history forever.
+
+This is the 10th story about operating systems. The Graphical User Interface (GUI) wasn't invented by Apple or Microsoft, but at Xerox PARC. Their "Alto" computer used a mouse, windows, and icons back in 1973, though it was considered too expensive for the general public at the time.
+
+This is the 11th fact about operating systems. Apple’s Lisa and the subsequent Macintosh brought the "Desktop Metaphor" to the masses in 1984. It forced the OS to handle complex memory management for graphics, much more demanding than the simple text-based shells of the past.
+
+This is the 12th story about operating systems. Windows 1.0 was released in 1985, but it wasn't a true OS; it was just a "shell" that ran on top of MS-DOS. It struggled with "Cooperative Multitasking," where one frozen app could crash the entire computer.
+
+This is the 13th fact about operating systems. The debate between "Monolithic" and "Microkernels" defined the late 80s. Monolithic kernels (like Linux) put everything in one big block, while Microkernels (like Mach) try to keep the core as small as possible for better stability.
+
+This is the 14th story about operating systems. In 1987, Andrew Tanenbaum created MINIX, a small Unix-like OS for educational purposes. He wanted students to see the source code, which eventually inspired a young student in Finland to try building something of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 14 index: 3
+user1: Sent 512 bytes.
+=============== k_sendto: Message mulating a whole computer, it just "packages" the application and its dependencies, sharing the host’s kernel to save massive amounts of overhead.
+
+This is the 27th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 28th fact about operating systems. Modern OSs use "Journaling" file systeS. They bought "QDOS" (Quick and Dirty Operating System) from Seattle Computer Products, renamed it MS-DOS, and licensed it to IBM, changing the course of computing history forever.
+
+This is the 10th story about operating systems. The Graphical User Interface (GUI) wasn't invented by Apple or Microsoft, but at Xerox PARC. Their "Alto" computer used a mouse, windows, and icons back in 1973, though it was considered too expensive for the general public at the time.
+
+This is the 11th fact about operating systems. Apple’s Lisa and the subsequent Macintosh brought the "Desktop Metaphor" to the masses in 1984. It forced the OS to handle complex memory management for graphics, much more demanding than the simple text-based shells of the past.
+
+This is the 12th story about operating systems. Windows 1.0 was released in 1985, but it wasn't a true OS; it was just a "shell" that ran on top of MS-DOS. It struggled with "Cooperative Multitasking," where one frozen app could crash the entire computer.
+
+This is the 13th fact about operating systems. The debate between "Monolithic" and "Microkernels" defined the late 80s. Monolithic kernels (like Linux) put everything in one big block, while Microkernels (like Mach) try to keep the core as small as possible for better stability.
+
+This is the 14th story about operating systems. In 1987, Andrew Tanenbaum created MINIX, a small Unix-like OS for educational purposes. He wanted students to see the source code, which eventually inspired a young student in Finland to try building something of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 15 index: 4
+user1: Sent 512 bytes.
+=============== k_sendto: Message ms. If the power cuts out, the journal keeps a log of what was being written, allowing the OS to recover our data without a long and painful disk check on the next boot.
+
+This is the 29th story about operating systems. We are now seeing "Unikernels," where the application and the OS are compiled into a single, tiny image. This removes the need for a traditional kernel entirely, creating the fastest possible execution for cloud-based microservices.
+
+This is the 30th story about operating systems. Real-Time Oms. Apple’s Lisa and the subsequent Macintosh brought the "Desktop Metaphor" to the masses in 1984. It forced the OS to handle complex memory management for graphics, much more demanding than the simple text-based shells of the past.
+
+This is the 12th story about operating systems. Windows 1.0 was released in 1985, but it wasn't a true OS; it was just a "shell" that ran on top of MS-DOS. It struggled with "Cooperative Multitasking," where one frozen app could crash the entire computer.
+
+This is the 13th fact about operating systems. The debate between "Monolithic" and "Microkernels" defined the late 80s. Monolithic kernels (like Linux) put everything in one big block, while Microkernels (like Mach) try to keep the core as small as possible for better stability.
+
+This is the 14th story about operating systems. In 1987, Andrew Tanenbaum created MINIX, a small Unix-like OS for educational purposes. He wanted students to see the source code, which eventually inspired a young student in Finland to try building something of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 16 index: 5
+user1: Sent 512 bytes.
+=============== k_sendto: Message perating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 31st fact about operating systems. To expand our testing dataset, we move into the Berkeley Software Distribution, or BSD. It started as a set of additions to Unix but eventually became a full-blown OS that pioneered the TCP/IP stack—the very foundation of the networking protocolact about operating systems. The debate between "Monolithic" and "Microkernels" defined the late 80s. Monolithic kernels (like Linux) put everything in one big block, while Microkernels (like Mach) try to keep the core as small as possible for better stability.
+
+This is the 14th story about operating systems. In 1987, Andrew Tanenbaum created MINIX, a small Unix-like OS for educational purposes. He wanted students to see the source code, which eventually inspired a young student in Finland to try building something of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 17 index: 6
+user1: Sent 512 bytes.
+=============== k_sendto: Message s we are simulating in our project.
+
+This is the 32nd story about operating systems. Plan 9 from Bell Labs was the intended successor to Unix. It took the "everything is a file" mantra to the extreme, representing even network connections and hardware as files, a design philosophy that influences how we think about data streams in our implementation.
+
+This is the 33rd fact about operating systems. System Calls act as the "front door" to the kernel. Whenever our program needs to read from a file or send a paomething of his own.
+
+This is the 15th fact about operating systems. In 1991, Linus Torvalds posted to a newsgroup saying he was working on a free OS "just a hobby, won't be big and professional like gnu." That hobby became the Linux kernel, which now runs the entire world's servers.
+
+This is the 16th story about operating systems. Richard Stallman’s GNU Project had already built all the "tools" (like compilers and editors) but was missing a kernel. When Linux arrived, the two were combined to create the fully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 18 index: 7
+user1: Sent 512 bytes.
+=============== k_sendto: Message cket, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hfully functional GNU/Linux systems we use today.
+
+This is the 17th fact about operating systems. "Virtual Memory" allows an OS to use the hard drive as if it were RAM. This lets us run programs much larger than our physical memory, managed by the kernel through a complex system of "paging" and "swapping."
+
+This is the 18th fact about operating systems. The "Inode" is a data structure in Unix file systems that stores everything about a file except its name. Understanding these low-level structures is key to  sent with ksockfd: 2 seq_no: 19 index: 8
+user1: Sent 512 bytes.
+=============== k_sendto: Message ardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 20 index: 9
+user1: Sent 512 bytes.
+=============== k_sendto: Message  about operating systems. Deadlocks are a programmer's nightmare where two processes are each waiting for the other to release a resource. I have to be careful of this in our implementation when locking our sliding window buffers to prevent the whole system from freezing.
+
+This is the 38th story about operating systems. Edsger Dijkstra, a pioneer in the field, introduced "Semaphores" to solve the problem of multiple processes accessing shared data. His work allows us to use Mutexes today to ensure our projefavor of a modern, "New Technology" kernel that provided actual security and stability for professional workstations.
+
+This is the 21st story about operating systems. When Steve Jobs returned to Apple, he brought the NeXTSTEP OS with him. Its Unix-based foundation became the "Darwin" kernel, which serves as the core of every macOS and iOS device in existence today.
+
+This is the 22nd fact about operating systems. POSIX is a set of standards that ensures different OSs can talk to each other. By following these rules, a programmer can write code on Linux and have a good chance of it running on Unix or macOS without major changes.
+
+This is the 23rd fact about operating systems. The "Blue Screen of Death" became a cultural icon of the 90s. It was the OS’s way of saying it hit a "Kernel Panic"—a state where the system detects a fatal error it cannot safely recover from without rebooting.
+
+This is the 24th story about operating systems. In 2008, Google released Android, which is essentially a specialized Linux kernel with a Java-based UI on top. It proved that a desktop-grade kernel could be stripped down to fit into the palm of our hands.
+
+This is the 25th fact about operating systems. Virtualization allows one "Host" OS to run multiple "Guest" OSs simultaneously. This is done via a Hypervisor, which tricks each guest into thinking it has direct access to the physical CPU and memory.
+
+This is the 26th fact about operating systems. Containerization, popularized by Docker, takes virtualization further. Instead of emulating a whole computer, it just "packages" the application and its dependencies, sharing the host’s kernel to save massive amounts of overhead.
+
+This is the 27th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 28th fact about operating systems. Modern OSs use "Journaling" file systems. If the power cuts out, the journal keeps a log of what was being written, allowing the OS to recover our data without a long and painful disk check on the next boot.
+
+This is the 29th story about operating systems. We are now seeing "Unikernels," where the application and the OS are compiled into a single, tiny image. This removes the need for a traditional kernel entirely, creating the fastest possible execution for cloud-based microservices.
+
+This is the 30th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 31st fact about operating systems. To expand our testing dataset, we move into the Berkeley Software Distribution, or BSD. It started as a set of additions to Unix but eventually became a full-blown OS that pioneered the TCP/IP stack—the very foundation of the networking protocols we are simulating in our project.
+
+This is the 32nd story about operating systems. Plan 9 from Bell Labs was the intended successor to Unix. It took the "everything is a file" mantra to the extreme, representing even network connections and hardware as files, a design philosophy that influences how we think about data streams in our implementation.
+
+This is the 33rd fact about operating systems. System Calls act as the "front door" to the kernel. Whenever our program needs to read from a file or send a packet, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 21 index: 0
+user1: Sent 512 bytes.
+=============== k_sendto: Message ct’s data remains consistent during high-speed transfers.
+
+This is the 39th fact about operating systems. A "Context Switch" happens when the OS saves the state of one process and loads another. While necessary for multitasking, it’s an expensive operation in terms of time, which is why we aim for efficient thread management in our project.
+
+This is the 40th story about operating systems. Windows 95 was a massive cultural event, featuring the Rolling Stones in its ad campaign. It was the first version oe rules, a programmer can write code on Linux and have a good chance of it running on Unix or macOS without major changes.
+
+This is the 23rd fact about operating systems. The "Blue Screen of Death" became a cultural icon of the 90s. It was the OS’s way of saying it hit a "Kernel Panic"—a state where the system detects a fatal error it cannot safely recover from without rebooting.
+
+This is the 24th story about operating systems. In 2008, Google released Android, which is essentially a specialized Linux kernel with a Java-based UI on top. It proved that a desktop-grade kernel could be stripped down to fit into the palm of our hands.
+
+This is the 25th fact about operating systems. Virtualization allows one "Host" OS to run multiple "Guest" OSs simultaneously. This is done via a Hypervisor, which tricks each guest into thinking it has direct access to the physical CPU and memory.
+
+This is the 26th fact about operating systems. Containerization, popularized by Docker, takes virtualization further. Instead of emulating a whole computer, it just "packages" the application and its dependencies, sharing the host’s kernel to save massive amounts of overhead.
+
+This is the 27th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 28th fact about operating systems. Modern OSs use "Journaling" file systems. If the power cuts out, the journal keeps a log of what was being written, allowing the OS to recover our data without a long and painful disk check on the next boot.
+
+This is the 29th story about operating systems. We are now seeing "Unikernels," where the application and the OS are compiled into a single, tiny image. This removes the need for a traditional kernel entirely, creating the fastest possible execution for cloud-based microservices.
+
+This is the 30th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 31st fact about operating systems. To expand our testing dataset, we move into the Berkeley Software Distribution, or BSD. It started as a set of additions to Unix but eventually became a full-blown OS that pioneered the TCP/IP stack—the very foundation of the networking protocols we are simulating in our project.
+
+This is the 32nd story about operating systems. Plan 9 from Bell Labs was the intended successor to Unix. It took the "everything is a file" mantra to the extreme, representing even network connections and hardware as files, a design philosophy that influences how we think about data streams in our implementation.
+
+This is the 33rd fact about operating systems. System Calls act as the "front door" to the kernel. Whenever our program needs to read from a file or send a packet, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 22 index: 1
+user1: Sent 512 bytes.
+=============== k_sendto: Message f Windows to introduce the "Start" menu and brought 32-bit architecture to the home user, moving away from the old 16-bit limits.
+
+This is the 41st fact about operating systems. IBM and Microsoft originally worked together on an OS called OS/2. After they split, OS/2 Warp became a cult classic known for its "Crash Protection" and superior multitasking, though it eventually lost the market share to Windows.
+
+This is the 42nd story about operating systems. Solaris, developed by Sun Microsystems, introduced DTernel with a Java-based UI on top. It proved that a desktop-grade kernel could be stripped down to fit into the palm of our hands.
+
+This is the 25th fact about operating systems. Virtualization allows one "Host" OS to run multiple "Guest" OSs simultaneously. This is done via a Hypervisor, which tricks each guest into thinking it has direct access to the physical CPU and memory.
+
+This is the 26th fact about operating systems. Containerization, popularized by Docker, takes virtualization further. Instead of emulating a whole computer, it just "packages" the application and its dependencies, sharing the host’s kernel to save massive amounts of overhead.
+
+This is the 27th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 28th fact about operating systems. Modern OSs use "Journaling" file systems. If the power cuts out, the journal keeps a log of what was being written, allowing the OS to recover our data without a long and painful disk check on the next boot.
+
+This is the 29th story about operating systems. We are now seeing "Unikernels," where the application and the OS are compiled into a single, tiny image. This removes the need for a traditional kernel entirely, creating the fastest possible execution for cloud-based microservices.
+
+This is the 30th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 31st fact about operating systems. To expand our testing dataset, we move into the Berkeley Software Distribution, or BSD. It started as a set of additions to Unix but eventually became a full-blown OS that pioneered the TCP/IP stack—the very foundation of the networking protocols we are simulating in our project.
+
+This is the 32nd story about operating systems. Plan 9 from Bell Labs was the intended successor to Unix. It took the "everything is a file" mantra to the extreme, representing even network connections and hardware as files, a design philosophy that influences how we think about data streams in our implementation.
+
+This is the 33rd fact about operating systems. System Calls act as the "front door" to the kernel. Whenever our program needs to read from a file or send a packet, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 23 index: 2
+user1: Sent 512 bytes.
+=============== k_sendto: Message race. This was a revolutionary tool that allowed developers to peek into the kernel's "brain" while it was running to find bottlenecks, similar to how we are logging our sequence numbers for debugging.
+
+This is the 43rd fact about operating systems. The ZFS file system, born in Solaris, is often called the "last word in file systems." It uses 128-bit addressing and can detect data corruption automatically, a level of reliability we are striving for in our own UDP protocol.
+
+This is the 44th fact about operamulating a whole computer, it just "packages" the application and its dependencies, sharing the host’s kernel to save massive amounts of overhead.
+
+This is the 27th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 28th fact about operating systems. Modern OSs use "Journaling" file systems. If the power cuts out, the journal keeps a log of what was being written, allowing the OS to recover our data without a long and painful disk check on the next boot.
+
+This is the 29th story about operating systems. We are now seeing "Unikernels," where the application and the OS are compiled into a single, tiny image. This removes the need for a traditional kernel entirely, creating the fastest possible execution for cloud-based microservices.
+
+This is the 30th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 31st fact about operating systems. To expand our testing dataset, we move into the Berkeley Software Distribution, or BSD. It started as a set of additions to Unix but eventually became a full-blown OS that pioneered the TCP/IP stack—the very foundation of the networking protocols we are simulating in our project.
+
+This is the 32nd story about operating systems. Plan 9 from Bell Labs was the intended successor to Unix. It took the "everything is a file" mantra to the extreme, representing even network connections and hardware as files, a design philosophy that influences how we think about data streams in our implementation.
+
+This is the 33rd fact about operating systems. System Calls act as the "front door" to the kernel. Whenever our program needs to read from a file or send a packet, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 24 index: 3
+user1: Sent 512 bytes.
+=============== k_sendto: Message ting systems. Hard links and Symbolic links are OS tricks to make one file appear in multiple places. A symbolic link is just a pointer to a path, while a hard link is a direct reference to the data's physical address on the disk.
+
+This is the 45th story about operating systems. The transition from FAT32 to NTFS was a major leap for Windows. NTFS introduced permissions and journaling, meaning the OS could finally keep track of who was allowed to touch which files, increasing the security of the whole systemms. If the power cuts out, the journal keeps a log of what was being written, allowing the OS to recover our data without a long and painful disk check on the next boot.
+
+This is the 29th story about operating systems. We are now seeing "Unikernels," where the application and the OS are compiled into a single, tiny image. This removes the need for a traditional kernel entirely, creating the fastest possible execution for cloud-based microservices.
+
+This is the 30th story about operating systems. Real-Time Operating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 31st fact about operating systems. To expand our testing dataset, we move into the Berkeley Software Distribution, or BSD. It started as a set of additions to Unix but eventually became a full-blown OS that pioneered the TCP/IP stack—the very foundation of the networking protocols we are simulating in our project.
+
+This is the 32nd story about operating systems. Plan 9 from Bell Labs was the intended successor to Unix. It took the "everything is a file" mantra to the extreme, representing even network connections and hardware as files, a design philosophy that influences how we think about data streams in our implementation.
+
+This is the 33rd fact about operating systems. System Calls act as the "front door" to the kernel. Whenever our program needs to read from a file or send a packet, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 25 index: 4
+user1: Sent 512 bytes.
+=============== k_sendto: Message .
+
+This is the 46th fact about operating systems. Disk fragmentation occurs when the OS scatters a single file across different physical parts of a spinning hard drive. This is why we have "defragmenters," which physically reorganize the data to speed up read operations.
+
+This is the 47th fact about operating systems. The rise of Solid State Drives (SSDs) changed how OSs handle storage. Since SSDs have no moving parts, fragmentation doesn't matter, but the OS must use a "TRIM" command to tell the drive whicperating Systems (RTOS) are used in things like cars and medical devices. Unlike Windows, an RTOS guarantees that a specific task will be completed within a strict time limit, where a delay could be life-threatening.
+
+This is the 31st fact about operating systems. To expand our testing dataset, we move into the Berkeley Software Distribution, or BSD. It started as a set of additions to Unix but eventually became a full-blown OS that pioneered the TCP/IP stack—the very foundation of the networking protocols we are simulating in our project.
+
+This is the 32nd story about operating systems. Plan 9 from Bell Labs was the intended successor to Unix. It took the "everything is a file" mantra to the extreme, representing even network connections and hardware as files, a design philosophy that influences how we think about data streams in our implementation.
+
+This is the 33rd fact about operating systems. System Calls act as the "front door" to the kernel. Whenever our program needs to read from a file or send a packet, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 26 index: 5
+user1: Sent 512 bytes.
+=============== k_sendto: Message h data blocks are no longer needed.
+
+This is the 48th story about operating systems. RAID (Redundant Array of Independent Disks) allows an OS to treat multiple physical hard drives as a single unit. This provides either extreme speed by writing to all disks at once or extreme safety by mirroring the data.
+
+This is the 49th fact about operating systems. "Hot Swapping" is an OS feature that allows us to plug in or remove hardware like hard drives or network cards without turning the computer off, a feat of ens we are simulating in our project.
+
+This is the 32nd story about operating systems. Plan 9 from Bell Labs was the intended successor to Unix. It took the "everything is a file" mantra to the extreme, representing even network connections and hardware as files, a design philosophy that influences how we think about data streams in our implementation.
+
+This is the 33rd fact about operating systems. System Calls act as the "front door" to the kernel. Whenever our program needs to read from a file or send a packet, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 27 index: 6
+user1: Sent 512 bytes.
+=============== k_sendto: Message gineering that requires the kernel to be incredibly flexible.
+
+This is the 50th story about operating systems. Symbian OS was the original king of the smartphone world, powering millions of Nokia devices. It was designed to be incredibly memory-efficient, which was necessary before phones had gigabytes of RAM.
+
+This is the 51st fact about operating systems. PalmOS was a pioneer in mobile computing, focusing on "Zen" simplicity. It lacked multitasking for a long time, but its "HotSync" technology was an earlcket, it must trigger a transition from user mode to kernel mode, a process that ensures our project doesn't accidentally overwrite critical system memory.
+
+This is the 34th fact about operating systems. Interrupts are the mechanism by which hardware gets the OS's attention. When a packet arrives at the network card, an interrupt stops the CPU's current task to handle the new data, a high-speed juggling act that our concurrent threads must mimic.
+
+This is the 35th story about operating systems. One of the hardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 28 index: 7
+user1: Sent 512 bytes.
+=============== k_sendto: Message y ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead ardest jobs for an OS is the Scheduler. It must decide which process gets to use the CPU next. Early algorithms like "Shortest Job First" were efficient but could lead to "starvation," where long tasks never got a turn.
+
+This is the 36th fact about operating systems. To fix starvation, modern OSs use "Round Robin" scheduling. Each process gets a tiny slice of time before being paused. This ensures our project’s sender and receiver threads both get equal attention from the processor.
+
+This is the 37th fact sent with ksockfd: 2 seq_no: 29 index: 8
+user1: Sent 512 bytes.
+=============== k_sendto: Message on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 30 index: 9
+user1: Sent 512 bytes.
+=============== k_sendto: Message of programs in memory. This makes it much harder for hackers to predict where to inject malicious code.
+
+This is the 56th fact about operating systems. DEP (Data Execution Prevention) is an OS feature that marks certain parts of memory as "non-executable." This prevents a common type of attack where a hacker tries to run code from a data buffer.
+
+This is the 57th fact about operating systems. The Meltdown and Spectre vulnerabilities in 2018 were unique because they were hardware flaws that the Operating Sysct’s data remains consistent during high-speed transfers.
+
+This is the 39th fact about operating systems. A "Context Switch" happens when the OS saves the state of one process and loads another. While necessary for multitasking, it’s an expensive operation in terms of time, which is why we aim for efficient thread management in our project.
+
+This is the 40th story about operating systems. Windows 95 was a massive cultural event, featuring the Rolling Stones in its ad campaign. It was the first version of Windows to introduce the "Start" menu and brought 32-bit architecture to the home user, moving away from the old 16-bit limits.
+
+This is the 41st fact about operating systems. IBM and Microsoft originally worked together on an OS called OS/2. After they split, OS/2 Warp became a cult classic known for its "Crash Protection" and superior multitasking, though it eventually lost the market share to Windows.
+
+This is the 42nd story about operating systems. Solaris, developed by Sun Microsystems, introduced DTrace. This was a revolutionary tool that allowed developers to peek into the kernel's "brain" while it was running to find bottlenecks, similar to how we are logging our sequence numbers for debugging.
+
+This is the 43rd fact about operating systems. The ZFS file system, born in Solaris, is often called the "last word in file systems." It uses 128-bit addressing and can detect data corruption automatically, a level of reliability we are striving for in our own UDP protocol.
+
+This is the 44th fact about operating systems. Hard links and Symbolic links are OS tricks to make one file appear in multiple places. A symbolic link is just a pointer to a path, while a hard link is a direct reference to the data's physical address on the disk.
+
+This is the 45th story about operating systems. The transition from FAT32 to NTFS was a major leap for Windows. NTFS introduced permissions and journaling, meaning the OS could finally keep track of who was allowed to touch which files, increasing the security of the whole system.
+
+This is the 46th fact about operating systems. Disk fragmentation occurs when the OS scatters a single file across different physical parts of a spinning hard drive. This is why we have "defragmenters," which physically reorganize the data to speed up read operations.
+
+This is the 47th fact about operating systems. The rise of Solid State Drives (SSDs) changed how OSs handle storage. Since SSDs have no moving parts, fragmentation doesn't matter, but the OS must use a "TRIM" command to tell the drive which data blocks are no longer needed.
+
+This is the 48th story about operating systems. RAID (Redundant Array of Independent Disks) allows an OS to treat multiple physical hard drives as a single unit. This provides either extreme speed by writing to all disks at once or extreme safety by mirroring the data.
+
+This is the 49th fact about operating systems. "Hot Swapping" is an OS feature that allows us to plug in or remove hardware like hard drives or network cards without turning the computer off, a feat of engineering that requires the kernel to be incredibly flexible.
+
+This is the 50th story about operating systems. Symbian OS was the original king of the smartphone world, powering millions of Nokia devices. It was designed to be incredibly memory-efficient, which was necessary before phones had gigabytes of RAM.
+
+This is the 51st fact about operating systems. PalmOS was a pioneer in mobile computing, focusing on "Zen" simplicity. It lacked multitasking for a long time, but its "HotSync" technology was an early ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 31 index: 0
+user1: Sent 512 bytes.
+=============== k_sendto: Message tem had to fix. These patches slowed down some CPUs but were necessary to prevent data leaks between apps.
+
+This is the 58th story about operating systems. Sandboxing is a technique where the OS traps an application in a "virtual cage." Even if the app is compromised, it cannot see or touch any other part of the system, which is how modern web browsers stay secure.
+
+This is the 59th fact about operating systems. "Plug and Play" was a feature introduced in the 90s to stop the nightmare of manually configurinf Windows to introduce the "Start" menu and brought 32-bit architecture to the home user, moving away from the old 16-bit limits.
+
+This is the 41st fact about operating systems. IBM and Microsoft originally worked together on an OS called OS/2. After they split, OS/2 Warp became a cult classic known for its "Crash Protection" and superior multitasking, though it eventually lost the market share to Windows.
+
+This is the 42nd story about operating systems. Solaris, developed by Sun Microsystems, introduced DTrace. This was a revolutionary tool that allowed developers to peek into the kernel's "brain" while it was running to find bottlenecks, similar to how we are logging our sequence numbers for debugging.
+
+This is the 43rd fact about operating systems. The ZFS file system, born in Solaris, is often called the "last word in file systems." It uses 128-bit addressing and can detect data corruption automatically, a level of reliability we are striving for in our own UDP protocol.
+
+This is the 44th fact about operating systems. Hard links and Symbolic links are OS tricks to make one file appear in multiple places. A symbolic link is just a pointer to a path, while a hard link is a direct reference to the data's physical address on the disk.
+
+This is the 45th story about operating systems. The transition from FAT32 to NTFS was a major leap for Windows. NTFS introduced permissions and journaling, meaning the OS could finally keep track of who was allowed to touch which files, increasing the security of the whole system.
+
+This is the 46th fact about operating systems. Disk fragmentation occurs when the OS scatters a single file across different physical parts of a spinning hard drive. This is why we have "defragmenters," which physically reorganize the data to speed up read operations.
+
+This is the 47th fact about operating systems. The rise of Solid State Drives (SSDs) changed how OSs handle storage. Since SSDs have no moving parts, fragmentation doesn't matter, but the OS must use a "TRIM" command to tell the drive which data blocks are no longer needed.
+
+This is the 48th story about operating systems. RAID (Redundant Array of Independent Disks) allows an OS to treat multiple physical hard drives as a single unit. This provides either extreme speed by writing to all disks at once or extreme safety by mirroring the data.
+
+This is the 49th fact about operating systems. "Hot Swapping" is an OS feature that allows us to plug in or remove hardware like hard drives or network cards without turning the computer off, a feat of engineering that requires the kernel to be incredibly flexible.
+
+This is the 50th story about operating systems. Symbian OS was the original king of the smartphone world, powering millions of Nokia devices. It was designed to be incredibly memory-efficient, which was necessary before phones had gigabytes of RAM.
+
+This is the 51st fact about operating systems. PalmOS was a pioneer in mobile computing, focusing on "Zen" simplicity. It lacked multitasking for a long time, but its "HotSync" technology was an early ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 32 index: 1
+user1: Sent 512 bytes.
+=============== k_sendto: Message g "jumpers" on hardware. It allowed the OS to automatically detect and install drivers for new devices as soon as they were connected.
+
+This is the 60th fact about operating systems. The Universal Serial Bus (USB) standard required OSs to develop a massive library of generic drivers. This is why you can plug almost any mouse or keyboard into any computer today and have it work instantly.
+
+This is the 61st story about operating systems. The transition from BIOS to UEFI changed how computers "wake up." UEFI irace. This was a revolutionary tool that allowed developers to peek into the kernel's "brain" while it was running to find bottlenecks, similar to how we are logging our sequence numbers for debugging.
+
+This is the 43rd fact about operating systems. The ZFS file system, born in Solaris, is often called the "last word in file systems." It uses 128-bit addressing and can detect data corruption automatically, a level of reliability we are striving for in our own UDP protocol.
+
+This is the 44th fact about operating systems. Hard links and Symbolic links are OS tricks to make one file appear in multiple places. A symbolic link is just a pointer to a path, while a hard link is a direct reference to the data's physical address on the disk.
+
+This is the 45th story about operating systems. The transition from FAT32 to NTFS was a major leap for Windows. NTFS introduced permissions and journaling, meaning the OS could finally keep track of who was allowed to touch which files, increasing the security of the whole system.
+
+This is the 46th fact about operating systems. Disk fragmentation occurs when the OS scatters a single file across different physical parts of a spinning hard drive. This is why we have "defragmenters," which physically reorganize the data to speed up read operations.
+
+This is the 47th fact about operating systems. The rise of Solid State Drives (SSDs) changed how OSs handle storage. Since SSDs have no moving parts, fragmentation doesn't matter, but the OS must use a "TRIM" command to tell the drive which data blocks are no longer needed.
+
+This is the 48th story about operating systems. RAID (Redundant Array of Independent Disks) allows an OS to treat multiple physical hard drives as a single unit. This provides either extreme speed by writing to all disks at once or extreme safety by mirroring the data.
+
+This is the 49th fact about operating systems. "Hot Swapping" is an OS feature that allows us to plug in or remove hardware like hard drives or network cards without turning the computer off, a feat of engineering that requires the kernel to be incredibly flexible.
+
+This is the 50th story about operating systems. Symbian OS was the original king of the smartphone world, powering millions of Nokia devices. It was designed to be incredibly memory-efficient, which was necessary before phones had gigabytes of RAM.
+
+This is the 51st fact about operating systems. PalmOS was a pioneer in mobile computing, focusing on "Zen" simplicity. It lacked multitasking for a long time, but its "HotSync" technology was an early ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 1 index: 2
+user1: Sent 512 bytes.
+=============== k_sendto: Message s essentially a tiny operating system itself that runs before the main OS, allowing for faster boot times and support for massive hard drives.
+
+This is the 62nd fact about operating systems. "Secure Boot" is a feature of UEFI that only allows the computer to load an OS that has a digital signature from a trusted source, preventing "rootkits" from hijacking the boot process.
+
+This is the 63rd fact about operating systems. Live USBs allow you to run an entire Operating System from a thumb drive without instalting systems. Hard links and Symbolic links are OS tricks to make one file appear in multiple places. A symbolic link is just a pointer to a path, while a hard link is a direct reference to the data's physical address on the disk.
+
+This is the 45th story about operating systems. The transition from FAT32 to NTFS was a major leap for Windows. NTFS introduced permissions and journaling, meaning the OS could finally keep track of who was allowed to touch which files, increasing the security of the whole system.
+
+This is the 46th fact about operating systems. Disk fragmentation occurs when the OS scatters a single file across different physical parts of a spinning hard drive. This is why we have "defragmenters," which physically reorganize the data to speed up read operations.
+
+This is the 47th fact about operating systems. The rise of Solid State Drives (SSDs) changed how OSs handle storage. Since SSDs have no moving parts, fragmentation doesn't matter, but the OS must use a "TRIM" command to tell the drive which data blocks are no longer needed.
+
+This is the 48th story about operating systems. RAID (Redundant Array of Independent Disks) allows an OS to treat multiple physical hard drives as a single unit. This provides either extreme speed by writing to all disks at once or extreme safety by mirroring the data.
+
+This is the 49th fact about operating systems. "Hot Swapping" is an OS feature that allows us to plug in or remove hardware like hard drives or network cards without turning the computer off, a feat of engineering that requires the kernel to be incredibly flexible.
+
+This is the 50th story about operating systems. Symbian OS was the original king of the smartphone world, powering millions of Nokia devices. It was designed to be incredibly memory-efficient, which was necessary before phones had gigabytes of RAM.
+
+This is the 51st fact about operating systems. PalmOS was a pioneer in mobile computing, focusing on "Zen" simplicity. It lacked multitasking for a long time, but its "HotSync" technology was an early ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 2 index: 3
+user1: Sent 512 bytes.
+=============== k_sendto: Message ling it on your hard drive. This is a favorite tool for system administrators and privacy advocates who want a clean slate every time.
+
+This is the 64th story about operating systems. Desktop Environments like GNOME and KDE provide the "look and feel" of Linux. While the kernel handles the hardware, these layers provide the windows, panels, and icons that make the OS usable for regular people.
+
+This is the 65th fact about operating systems. Package Management systems like APT and RPM revolutionized how we i.
+
+This is the 46th fact about operating systems. Disk fragmentation occurs when the OS scatters a single file across different physical parts of a spinning hard drive. This is why we have "defragmenters," which physically reorganize the data to speed up read operations.
+
+This is the 47th fact about operating systems. The rise of Solid State Drives (SSDs) changed how OSs handle storage. Since SSDs have no moving parts, fragmentation doesn't matter, but the OS must use a "TRIM" command to tell the drive which data blocks are no longer needed.
+
+This is the 48th story about operating systems. RAID (Redundant Array of Independent Disks) allows an OS to treat multiple physical hard drives as a single unit. This provides either extreme speed by writing to all disks at once or extreme safety by mirroring the data.
+
+This is the 49th fact about operating systems. "Hot Swapping" is an OS feature that allows us to plug in or remove hardware like hard drives or network cards without turning the computer off, a feat of engineering that requires the kernel to be incredibly flexible.
+
+This is the 50th story about operating systems. Symbian OS was the original king of the smartphone world, powering millions of Nokia devices. It was designed to be incredibly memory-efficient, which was necessary before phones had gigabytes of RAM.
+
+This is the 51st fact about operating systems. PalmOS was a pioneer in mobile computing, focusing on "Zen" simplicity. It lacked multitasking for a long time, but its "HotSync" technology was an early ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 3 index: 4
+user1: Sent 512 bytes.
+=============== k_sendto: Message nstall software. Instead of searching the web, the OS maintains a "repository" of verified software, handling all dependencies and updates automatically.
+
+This is the 66th story about operating systems. The "Year of the Linux Desktop" has been a running joke in the tech community for 20 years. While Linux dominates servers and phones, it has struggled to replace Windows on home PCs due to software compatibility and gaming.
+
+This is the 67th fact about operating systems. Windows 10 introduced the concept of h data blocks are no longer needed.
+
+This is the 48th story about operating systems. RAID (Redundant Array of Independent Disks) allows an OS to treat multiple physical hard drives as a single unit. This provides either extreme speed by writing to all disks at once or extreme safety by mirroring the data.
+
+This is the 49th fact about operating systems. "Hot Swapping" is an OS feature that allows us to plug in or remove hardware like hard drives or network cards without turning the computer off, a feat of engineering that requires the kernel to be incredibly flexible.
+
+This is the 50th story about operating systems. Symbian OS was the original king of the smartphone world, powering millions of Nokia devices. It was designed to be incredibly memory-efficient, which was necessary before phones had gigabytes of RAM.
+
+This is the 51st fact about operating systems. PalmOS was a pioneer in mobile computing, focusing on "Zen" simplicity. It lacked multitasking for a long time, but its "HotSync" technology was an early ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 4 index: 5
+user1: Sent 512 bytes.
+=============== k_sendto: Message "Windows as a Service." Instead of releasing a new version every few years, the OS is constantly updated with new features and security patches, much like a mobile app.
+
+This is the 68th story about operating systems. macOS went through a massive transition when Apple switched from Intel processors to their own M-series chips. The OS had to include a "Rosetta" layer to translate old software to the new architecture in real-time.
+
+This is the 69th fact about operating systems. ChromeOS is a "Web-centric" OS gineering that requires the kernel to be incredibly flexible.
+
+This is the 50th story about operating systems. Symbian OS was the original king of the smartphone world, powering millions of Nokia devices. It was designed to be incredibly memory-efficient, which was necessary before phones had gigabytes of RAM.
+
+This is the 51st fact about operating systems. PalmOS was a pioneer in mobile computing, focusing on "Zen" simplicity. It lacked multitasking for a long time, but its "HotSync" technology was an early ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 5 index: 6
+user1: Sent 512 bytes.
+=============== k_sendto: Message built by Google. It assumes that everything you do happens in a browser, making the local OS incredibly thin and fast, perfect for education and low-power hardware.
+
+This is the 70th story about operating systems. Fuchsia is a new, experimental OS from Google that doesn't use the Linux kernel. It is built on a custom microkernel called "Zircon" and is designed to run on everything from smart watches to desktop computers.
+
+This is the 71st fact about operating systems. VxWorks is a high-end RTOS used by NASAy ancestor of the data synchronization we use every day now.
+
+This is the 52nd story about operating systems. BlackBerry OS became the gold standard for corporate security. Its "Push Email" technology relied on a specialized network architecture that made it the most reliable communication tool for world leaders for over a decade.
+
+This is the 53rd fact about operating systems. When iOS launched in 2007, it was famously a "walled garden." The OS didn't even allow third-party apps at first, focusing instead on a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 6 index: 7
+user1: Sent 512 bytes.
+=============== k_sendto: Message . It was the operating system that controlled the Mars Rovers, proving that a well-designed kernel can operate reliably even millions of miles away from the nearest technician.
+
+This is the 72nd fact about operating systems. QNX is the "silent" OS that runs the world. You’ll find it in car infotainment systems, medical devices, and even nuclear power plant controllers, chosen for its extreme reliability and microkernel architecture.
+
+This is the 73rd story about operating systems. FreeRTOS is a tiny operaon a highly polished and buttery-smooth user experience that changed mobile design forever.
+
+This is the 54th fact about operating systems. Security-Enhanced Linux (SELinux) was a project by the NSA to bring "Mandatory Access Control" to the kernel. It adds a layer of security so tight that even the "root" user can be restricted from certain actions.
+
+This is the 55th story about operating systems. ASLR (Address Space Layout Randomization) is a security trick where the OS randomly moves around the location  sent with ksockfd: 2 seq_no: 7 index: 8
+user1: Sent 512 bytes.
+=============== k_sendto: Message ting system for microcontrollers that are too small to run Linux. It is open-source and provides just enough scheduling and memory management to keep low-power IoT devices running smoothly.
+
+This is the 74th fact about operating systems. Mainframes still run on massive operating systems like IBM's z/OS. These systems are designed for "Five Nines" of reliability, meaning they are expected to be up and running 99.999% of the year without a single reboot.
+
+This is the 75th story about operating systems. Temple sent with ksockfd: 2 seq_no: 8 index: 9
+user1: Sent 512 bytes.
+=============== k_sendto: Message OS was a fascinating "outsider" OS written entirely by one man, Terry Davis. It was a 64-bit, non-preemptive multitasking system that featured its own programming language called HolyC, a unique piece of computing history.
+
+This is the 76th fact about operating systems. "eBPF" is a revolutionary technology in the Linux kernel that allows programmers to run custom code safely inside the OS. It’s used for high-performance networking and deep system observability without changing the kernel source.
+
+This is tem had to fix. These patches slowed down some CPUs but were necessary to prevent data leaks between apps.
+
+This is the 58th story about operating systems. Sandboxing is a technique where the OS traps an application in a "virtual cage." Even if the app is compromised, it cannot see or touch any other part of the system, which is how modern web browsers stay secure.
+
+This is the 59th fact about operating systems. "Plug and Play" was a feature introduced in the 90s to stop the nightmare of manually configuring "jumpers" on hardware. It allowed the OS to automatically detect and install drivers for new devices as soon as they were connected.
+
+This is the 60th fact about operating systems. The Universal Serial Bus (USB) standard required OSs to develop a massive library of generic drivers. This is why you can plug almost any mouse or keyboard into any computer today and have it work instantly.
+
+This is the 61st story about operating systems. The transition from BIOS to UEFI changed how computers "wake up." UEFI is essentially a tiny operating system itself that runs before the main OS, allowing for faster boot times and support for massive hard drives.
+
+This is the 62nd fact about operating systems. "Secure Boot" is a feature of UEFI that only allows the computer to load an OS that has a digital signature from a trusted source, preventing "rootkits" from hijacking the boot process.
+
+This is the 63rd fact about operating systems. Live USBs allow you to run an entire Operating System from a thumb drive without installing it on your hard drive. This is a favorite tool for system administrators and privacy advocates who want a clean slate every time.
+
+This is the 64th story about operating systems. Desktop Environments like GNOME and KDE provide the "look and feel" of Linux. While the kernel handles the hardware, these layers provide the windows, panels, and icons that make the OS usable for regular people.
+
+This is the 65th fact about operating systems. Package Management systems like APT and RPM revolutionized how we install software. Instead of searching the web, the OS maintains a "repository" of verified software, handling all dependencies and updates automatically.
+
+This is the 66th story about operating systems. The "Year of the Linux Desktop" has been a running joke in the tech community for 20 years. While Linux dominates servers and phones, it has struggled to replace Windows on home PCs due to software compatibility and gaming.
+
+This is the 67th fact about operating systems. Windows 10 introduced the concept of "Windows as a Service." Instead of releasing a new version every few years, the OS is constantly updated with new features and security patches, much like a mobile app.
+
+This is the 68th story about operating systems. macOS went through a massive transition when Apple switched from Intel processors to their own M-series chips. The OS had to include a "Rosetta" layer to translate old software to the new architecture in real-time.
+
+This is the 69th fact about operating systems. ChromeOS is a "Web-centric" OS built by Google. It assumes that everything you do happens in a browser, making the local OS incredibly thin and fast, perfect for education and low-power hardware.
+
+This is the 70th story about operating systems. Fuchsia is a new, experimental OS from Google that doesn't use the Linux kernel. It is built on a custom microkernel called "Zircon" and is designed to run on everything from smart watches to desktop computers.
+
+This is the 71st fact about operating systems. VxWorks is a high-end RTOS used by NASA. It was the operating system that controlled the Mars Rovers, proving that a well-designed kernel can operate reliably even millions of miles away from the nearest technician.
+
+This is the 72nd fact about operating systems. QNX is the "silent" OS that runs the world. You’ll find it in car infotainment systems, medical devices, and even nuclear power plant controllers, chosen for its extreme reliability and microkernel architecture.
+
+This is the 73rd story about operating systems. FreeRTOS is a tiny operating system for microcontrollers that are too small to run Linux. It is open-source and provides just enough scheduling and memory management to keep low-power IoT devices running smoothly.
+
+This is the 74th fact about operating systems. Mainframes still run on massive operating systems like IBM's z/OS. These systems are designed for "Five Nines" of reliability, meaning they are expected to be up and running 99.999% of the year without a single reboot.
+
+This is the 75th story about operating systems. Temple sent with ksockfd: 2 seq_no: 9 index: 0
+user1: Sent 512 bytes.
+=============== k_sendto: Message the 77th fact about operating systems. WebAssembly (Wasm) is being explored as a new way to run code. Some believe it could lead to "Cloud Native" operating systems where the browser or the cloud environment itself acts as the primary execution layer for all apps.
+
+This is the 78th story about operating systems. The future of OS design involves "Capability-Based Security." Instead of a program having full access to your files, it is only given a specific "token" for the one file it needs, making data breachg "jumpers" on hardware. It allowed the OS to automatically detect and install drivers for new devices as soon as they were connected.
+
+This is the 60th fact about operating systems. The Universal Serial Bus (USB) standard required OSs to develop a massive library of generic drivers. This is why you can plug almost any mouse or keyboard into any computer today and have it work instantly.
+
+This is the 61st story about operating systems. The transition from BIOS to UEFI changed how computers "wake up." UEFI is essentially a tiny operating system itself that runs before the main OS, allowing for faster boot times and support for massive hard drives.
+
+This is the 62nd fact about operating systems. "Secure Boot" is a feature of UEFI that only allows the computer to load an OS that has a digital signature from a trusted source, preventing "rootkits" from hijacking the boot process.
+
+This is the 63rd fact about operating systems. Live USBs allow you to run an entire Operating System from a thumb drive without installing it on your hard drive. This is a favorite tool for system administrators and privacy advocates who want a clean slate every time.
+
+This is the 64th story about operating systems. Desktop Environments like GNOME and KDE provide the "look and feel" of Linux. While the kernel handles the hardware, these layers provide the windows, panels, and icons that make the OS usable for regular people.
+
+This is the 65th fact about operating systems. Package Management systems like APT and RPM revolutionized how we install software. Instead of searching the web, the OS maintains a "repository" of verified software, handling all dependencies and updates automatically.
+
+This is the 66th story about operating systems. The "Year of the Linux Desktop" has been a running joke in the tech community for 20 years. While Linux dominates servers and phones, it has struggled to replace Windows on home PCs due to software compatibility and gaming.
+
+This is the 67th fact about operating systems. Windows 10 introduced the concept of "Windows as a Service." Instead of releasing a new version every few years, the OS is constantly updated with new features and security patches, much like a mobile app.
+
+This is the 68th story about operating systems. macOS went through a massive transition when Apple switched from Intel processors to their own M-series chips. The OS had to include a "Rosetta" layer to translate old software to the new architecture in real-time.
+
+This is the 69th fact about operating systems. ChromeOS is a "Web-centric" OS built by Google. It assumes that everything you do happens in a browser, making the local OS incredibly thin and fast, perfect for education and low-power hardware.
+
+This is the 70th story about operating systems. Fuchsia is a new, experimental OS from Google that doesn't use the Linux kernel. It is built on a custom microkernel called "Zircon" and is designed to run on everything from smart watches to desktop computers.
+
+This is the 71st fact about operating systems. VxWorks is a high-end RTOS used by NASA. It was the operating system that controlled the Mars Rovers, proving that a well-designed kernel can operate reliably even millions of miles away from the nearest technician.
+
+This is the 72nd fact about operating systems. QNX is the "silent" OS that runs the world. You’ll find it in car infotainment systems, medical devices, and even nuclear power plant controllers, chosen for its extreme reliability and microkernel architecture.
+
+This is the 73rd story about operating systems. FreeRTOS is a tiny operating system for microcontrollers that are too small to run Linux. It is open-source and provides just enough scheduling and memory management to keep low-power IoT devices running smoothly.
+
+This is the 74th fact about operating systems. Mainframes still run on massive operating systems like IBM's z/OS. These systems are designed for "Five Nines" of reliability, meaning they are expected to be up and running 99.999% of the year without a single reboot.
+
+This is the 75th story about operating systems. Temple sent with ksockfd: 2 seq_no: 10 index: 1
+user1: Sent 512 bytes.
+=============== k_sendto: Message es almost impossible.
+
+This is the 79th fact about operating systems. Quantum Operating Systems are currently being researched to manage the strange world of qubits. These systems will have to handle "superposition" and "entanglement," concepts that are completely alien to our current binary logic.
+
+This is the 80th paragraph. This concludes our timeline of Operating System evolution for our test suite. If these 80 blocks of text have arrived in order and without loss, our Reliable UDP implementation has sus essentially a tiny operating system itself that runs before the main OS, allowing for faster boot times and support for massive hard drives.
+
+This is the 62nd fact about operating systems. "Secure Boot" is a feature of UEFI that only allows the computer to load an OS that has a digital signature from a trusted source, preventing "rootkits" from hijacking the boot process.
+
+This is the 63rd fact about operating systems. Live USBs allow you to run an entire Operating System from a thumb drive without installing it on your hard drive. This is a favorite tool for system administrators and privacy advocates who want a clean slate every time.
+
+This is the 64th story about operating systems. Desktop Environments like GNOME and KDE provide the "look and feel" of Linux. While the kernel handles the hardware, these layers provide the windows, panels, and icons that make the OS usable for regular people.
+
+This is the 65th fact about operating systems. Package Management systems like APT and RPM revolutionized how we install software. Instead of searching the web, the OS maintains a "repository" of verified software, handling all dependencies and updates automatically.
+
+This is the 66th story about operating systems. The "Year of the Linux Desktop" has been a running joke in the tech community for 20 years. While Linux dominates servers and phones, it has struggled to replace Windows on home PCs due to software compatibility and gaming.
+
+This is the 67th fact about operating systems. Windows 10 introduced the concept of "Windows as a Service." Instead of releasing a new version every few years, the OS is constantly updated with new features and security patches, much like a mobile app.
+
+This is the 68th story about operating systems. macOS went through a massive transition when Apple switched from Intel processors to their own M-series chips. The OS had to include a "Rosetta" layer to translate old software to the new architecture in real-time.
+
+This is the 69th fact about operating systems. ChromeOS is a "Web-centric" OS built by Google. It assumes that everything you do happens in a browser, making the local OS incredibly thin and fast, perfect for education and low-power hardware.
+
+This is the 70th story about operating systems. Fuchsia is a new, experimental OS from Google that doesn't use the Linux kernel. It is built on a custom microkernel called "Zircon" and is designed to run on everything from smart watches to desktop computers.
+
+This is the 71st fact about operating systems. VxWorks is a high-end RTOS used by NASA. It was the operating system that controlled the Mars Rovers, proving that a well-designed kernel can operate reliably even millions of miles away from the nearest technician.
+
+This is the 72nd fact about operating systems. QNX is the "silent" OS that runs the world. You’ll find it in car infotainment systems, medical devices, and even nuclear power plant controllers, chosen for its extreme reliability and microkernel architecture.
+
+This is the 73rd story about operating systems. FreeRTOS is a tiny operating system for microcontrollers that are too small to run Linux. It is open-source and provides just enough scheduling and memory management to keep low-power IoT devices running smoothly.
+
+This is the 74th fact about operating systems. Mainframes still run on massive operating systems like IBM's z/OS. These systems are designed for "Five Nines" of reliability, meaning they are expected to be up and running 99.999% of the year without a single reboot.
+
+This is the 75th story about operating systems. Temple sent with ksockfd: 2 seq_no: 11 index: 2
+user1: Sent 512 bytes.
+=============== k_sendto: Message ccessfully navigated the complexities of sliding windows and flow control. sent with ksockfd: 2 seq_no: 12 index: 3
+user1: Sent 74 bytes.
+user1: End of file reached.
+=============== k_sendto: Message ~ sent with ksockfd: 2 seq_no: 13 index: 4
+user1: Sent 1 bytes.
+user1: EOF marker sent.
+
+
+=============== k_close: Socket closed with ksockfd: 2

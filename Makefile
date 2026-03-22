@@ -30,9 +30,15 @@ run-init: init
 run-user1: user1
 	-./user1 127.0.0.1 30003 127.0.0.1 30004 > logs/user1.log
 
-
 run-user2: user2
 	-./user2 127.0.0.1 30004 127.0.0.1 30003 > logs/user2.log
+
+
+run-user3: user1
+	-./user1 127.0.0.1 30005 127.0.0.1 30006 > logs/user3.log
+
+run-user4: user2
+	-./user2 127.0.0.1 30006 127.0.0.1 30005 > logs/user4.log
 
 
 clean:

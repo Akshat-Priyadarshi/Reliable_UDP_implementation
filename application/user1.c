@@ -1,3 +1,10 @@
+// Mini Project 1 Submission
+// Group Details:
+// Member 1 Name: Akshat Priyadarshi
+// Member 1 Roll number: 23CS30003
+// Member 2 Name: Aman Tudu
+// Member 2 Roll number: 23CS30004
+
 #include <ksocket.h>
 char buf[MSGSIZE];
 const char *eof_marker = "~";
@@ -31,8 +38,8 @@ int main(int argc, char *argv[])
     addr.sin_port = htons(dest_port);
     addr.sin_addr.s_addr = inet_addr(dest_ip);
 
-    FILE *fp = fopen("./testdata/sample1.txt", "r");
-    // FILE *fp = fopen("./testdata/sample2.txt", "r");
+    // FILE *fp = fopen("./testdata/sample1.txt", "r");
+    FILE *fp = fopen("./testdata/sample2.txt", "r");
     if (fp == NULL)
     {
         perror("user1: fopen");
