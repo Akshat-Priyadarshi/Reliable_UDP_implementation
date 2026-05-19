@@ -1,6 +1,6 @@
 # Reliable Flow Control over Unreliable Channels (KTP Socket Library)
 
-This project implements a **custom reliable transport protocol (KTP)** over **unreliable UDP sockets**, developed as part of the Networks Laboratory coursework. It emulates **end-to-end reliable data transfer using a sliding window flow control mechanism**, ensuring ordered and loss-free message delivery at the application level.
+This project implements a **custom reliable transport protocol (KTP)** over **unreliable UDP sockets**, developed as part of the Computer Networks Laboratory coursework. It emulates **end-to-end reliable data transfer using a sliding window flow control mechanism**, ensuring ordered and loss-free message delivery at the application level.
 
 The system provides a **socket-like API through a static C library**, allowing user programs to send and receive fixed-size messages reliably despite packet drops or delays. Reliability is achieved using **sequence numbers, acknowledgements, retransmissions, buffering, and receiver-advertised window sizes**.
 
